@@ -1,5 +1,5 @@
 ---
-title: Categories
+title: Crear una imagen forense y calcular el hash md5, sha1 y sha256
 date: 2013-12-24 23:30:09
 categories:
 - Foo
