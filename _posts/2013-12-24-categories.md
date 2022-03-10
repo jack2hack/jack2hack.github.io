@@ -1,5 +1,5 @@
 ---
-title: Crear una imagen forense y calcular los hashes md5, sha1 y sha256 para garantizar su integridad
+title: Crackear los hashes del archivo /etc/shadow en Linux
 date: 2013-12-24 23:30:09
 categories:
 - Foo
