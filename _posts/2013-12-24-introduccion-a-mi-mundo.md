@@ -7,5 +7,3 @@ tags:
 ---
 
 Bienvenidos a Jack2Hack. Yo soy Jack y este es mi blog personal sobre (in)seguridad informática.
-
----
