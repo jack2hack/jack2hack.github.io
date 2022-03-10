@@ -9,4 +9,4 @@ tags:
 - Baz
 ---
 
-Hola a todos. En este post voy a demostrar cómo se puede hacer un bypass en Windows para iniciar sesión sin contraseña.
+Hola a todos. En este post voy a demostrar cómo se puede hacer un bypass en Windows.
