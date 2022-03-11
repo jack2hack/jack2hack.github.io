@@ -148,9 +148,9 @@ Como se puede ver en la imagen, la contraseña de mi hash ha sido crackeada corr
 john.exe –format=NT –wordlist=C:\Tools\john\run\rockyou.txt
 ```
 
-> Rockyou.txt es uno de los diccionarios más populares pero existen infinidad de diccionarios en internet que puedes utilizar para realizar estos ataques de fuerza bruta y crackear contraseñas.
+> Rockyou.txt es uno de los diccionarios más populares pero existen infinidad de diccionarios en internet.
 
-Bueno, una vez obtenida la contraseña podemos visualizarla introduciendo:
+Una vez obtenida la contraseña podemos visualizarla introduciendo:
 
 ```sh
 john.exe –show –format=NT C:\Users\PH300\Documents\pwdump.txt
