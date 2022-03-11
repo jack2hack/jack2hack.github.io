@@ -1,5 +1,5 @@
 ---
-title: Buscando vulnerabilidades en el router con RouterSploit
+title: Identificando malware con análisis estáticos y dinámicos
 date: 2013-12-24 23:31:30
 categories:
 - test/test
