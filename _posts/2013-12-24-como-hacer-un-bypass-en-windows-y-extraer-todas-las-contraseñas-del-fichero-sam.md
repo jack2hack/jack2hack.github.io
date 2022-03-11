@@ -98,13 +98,15 @@ Una vez hecho esto ya hemos extraido todos los hashes del fichero SAM, así que 
 
 En mi caso, yo he modificado el archivo pwdump.txt de la siguiente manera:
 
-* PwDump sin modificar:
+* pwdump.txt sin modificar:
 
-![PwDump.txt sin modificar](https://i.ibb.co/wSYnpr1/notepad-1.png)
+![pwdump.txt sin modificar](https://i.ibb.co/wSYnpr1/notepad-1.png)
 
-* PwDump modificado:
+* pwdump.txt modificado:
 
-![PwDump.txt modificado](https://i.ibb.co/zVRj2B8/notepad-2.png)
+![pwdump.txt modificado](https://i.ibb.co/zVRj2B8/notepad-2.png)
+
+Una vez que tengamos los hashes volcados en el fichero de texto ya estamos listos para crackearlos y obtener sus contraseñas.
 
 Para crackear los hashes utilizaremos un programa llamado John the Ripper:
 
