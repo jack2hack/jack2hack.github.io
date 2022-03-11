@@ -46,7 +46,7 @@ Con estos comandos lo que hacemos es ir al directorio Windows\System32, renombra
 
 Una vez hecho esto cerramos la consola, apagamos el ordenador y quitamos el CD o USB para que Windows arranque normalmente, y cuando nos encontremos en la pantalla del login presionamos «Tecla de Windows + U» o simplemente hacemos click sobre el icono de accesibilidad y a continuación se nos abrirá una consola de comandos.
 
-En este punto ya podriamos resetear la contraseña de cualquier cuenta y acceder con la nueva contraseña, pero lo que queremos es obtener la contraseña y no cambiarla, así que lo que vamos a hacer es habilitar la cuenta de administrador para acceder al sistema y después procederemos a extraer los hashes del fichero SAM para crackearlos.
+En este punto ya podriamos resetear la contraseña de cualquier cuenta y acceder con la nueva contraseña, pero lo que queremos es obtener la contraseña y no cambiarla, así que lo que vamos a hacer es habilitar la cuenta de administrador para acceder al sistema y después vamos a extraer los hashes del fichero SAM para crackearlos.
 
 Introducimos el siguiente comando:
 
