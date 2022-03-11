@@ -106,9 +106,9 @@ En mi caso, yo he modificado el archivo pwdump.txt de la siguiente manera:
 
 ![pwdump.txt modificado](https://i.ibb.co/zVRj2B8/notepad-2.png)
 
-Una vez que tengamos los hashes volcados en el fichero de texto ya estamos listos para crackearlos y obtener sus contraseñas.
+Una vez que tengamos los hashes volcados en el fichero de texto ya estamos listos para empezar a crackearlos .
 
-Para crackear los hashes utilizaremos un programa llamado John the Ripper:
+Para crackear los hashes utilizaremos un programa de Openwall llamado John the Ripper:
 
 ![John The Ripper](https://i.ibb.co/n3g4sZh/john-the-ripper.png)
 
@@ -128,7 +128,7 @@ Nos ubicamos en el directorio donde hemos extraido los archivos y entramos en la
 john.exe
 ```
 
-A continuación se mostrará por pantalla la versión del programa, un ejemplo de uso y una lista de argumentos que podemos ejecutar con John the Ripper:
+A continuación se mostrará por pantalla la versión del programa, un ejemplo de uso y una lista de argumentos:
 
 ![John the Ripper-2](https://i.ibb.co/RBL6505/john-the-ripper-2.png)
 
@@ -148,7 +148,7 @@ Como se puede ver en la imagen, la contraseña de mi hash ha sido crackeada corr
 john.exe –format=NT –wordlist=C:\Tools\john\run\rockyou.txt
 ```
 
-Rockyou.txt es uno de los diccionarios más populares pero existen infinidad de diccionarios en internet que puedes utilizar para crackear contraseñas.
+> Rockyou.txt es uno de los diccionarios más populares pero existen infinidad de diccionarios en internet que puedes utilizar para crackear contraseñas.
 
 Bueno, una vez obtenida la contraseña podemos visualizarla introduciendo:
 
