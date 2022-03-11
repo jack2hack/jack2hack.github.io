@@ -35,7 +35,7 @@ Seleccionamos **«Símbolo del sistema»** y se abrirá una consola de comandos:
 
 Introducimos los siguientes comandos:
 
-```bat
+```batch
 C:\
 cd windows\system32
 ren utilman.exe utilman.exe.bak
@@ -70,7 +70,7 @@ Para ejecutar PwDump no basta con ejecutar el archivo.exe normalmente, hay que e
 
 Una vez ubicados en la ruta del PwDump introducimos el siguiente comando:
 
-```
+```batch
 pwdump8.exe
 ```
 
@@ -90,7 +90,7 @@ Lo que vamos a hacer ahora es volcar todos los hashes en un fichero de texto par
 
 Podemos copiar el resultado que nos muestra PwDump en un fichero de texto o introducir este comando:
 
-```
+```batch
 pwdump8.exe > pwdump.txt
 ```
 
@@ -124,7 +124,7 @@ Después extraemos los ficheros y ejecutamos el CMD como administrador.
 
 Nos ubicamos en el directorio donde hemos extraido los archivos y entramos en la carpeta «john-1.9.0-jumbo-1-win64», después nos metrmos en «run» y luego introducimos el siguiente comando para ejecutar John the Ripper:
 
-```
+```batch
 john.exe
 ```
 
@@ -136,7 +136,7 @@ Para realizar un ataque correctamente hay que indicar el tipo de hash y el dicci
 
 Yo voy a indicar el tipo de hash, y voy a probar con el diccionario por defecto:
     
-```
+```batch
 john.exe –format=NT C:\Tools\pwdump8\pwdump.txt
 ```
 
@@ -144,7 +144,7 @@ john.exe –format=NT C:\Tools\pwdump8\pwdump.txt
 
 Como se puede ver en la imagen, la contraseña de mi hash ha sido crackeada correctamente utilizando el diccionario por defecto, pero si no la hubiese encontrado podría probar utilizando otro diccionario de la siguiente manera:
 
-```
+```batch
 john.exe –format=NT –wordlist=C:\Tools\john\run\rockyou.txt
 ```
 
@@ -152,7 +152,7 @@ john.exe –format=NT –wordlist=C:\Tools\john\run\rockyou.txt
 
 Una vez que hayamos obtenido la contraseña podemos visualizarla introduciendo el siguiente comando:
 
-```
+```batch
 john.exe –show –format=NT C:\Users\PH300\Documents\pwdump.txt
 ```
 
