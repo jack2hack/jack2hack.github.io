@@ -1,5 +1,5 @@
 ---
-title: Extraer todas las contraseñas del fichero SAM
+title: Crackeando los hashes del archivo /etc/shadow en Linux 
 date: 2013-12-24 23:30:04
 link: http://www.google.com/
 categories:
