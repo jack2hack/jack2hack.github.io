@@ -76,7 +76,7 @@ pwdump8.exe
 
 ![PwDump](https://i.ibb.co/gt7Yc9Q/pwdump-1.png)
 
-A continuación se mostrará en pantalla un listado con todos los hashes de contraseñas extraidos y ya podríamos proceder a guardarlos, pero antes quiero explicar cómo se compone el formato que nos muestra PwDump:
+A continuación se mostrará en pantalla un listado con todos los hashes de contraseñas extraidos y ya podríamos proceder a guardarlos, pero antes de nada quiero explicar cómo se compone el formato que nos muestra PwDump:
 
 Nombre de usuario : ID de usuario : Hash de la contraseña en LM : Hash de la contraseña en NTLM
 
