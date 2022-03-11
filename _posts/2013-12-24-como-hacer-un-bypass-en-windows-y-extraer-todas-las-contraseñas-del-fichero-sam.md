@@ -94,7 +94,7 @@ Podemos copiar el resultado que nos muestra PwDump en un fichero de texto o intr
 pwdump8.exe > pwdump.txt
 ```
 
-Una vez hecho esto ya hemos extraido todos los hashes del fichero SAM, así que ya lo único que nos queda es crackearlos para obtener las contraseñas, pero como he dicho tenemos hashes de cuentas por defecto con contraseñas vacías así que es recomendable modificar el archivo de texto pwdump.txt y eliminar los hashes que sabemos que nos van a devolver resultados nulos para organizar y facilitar el trabajo a la hora de crackear los hashes.
+Una vez hecho esto ya hemos extraido todos los hashes del fichero SAM, así que ya lo único que nos queda es crackearlos para obtener las contraseñas, pero como he dicho tenemos hashes de cuentas por defecto con contraseñas vacías así que es recomendable modificar el archivo de texto pwdump.txt y eliminar los hashes que sabemos que nos van a devolver resultados nulos para organizar y facilitar el trabajo a la hora de crackearlos.
 
 En mi caso, yo he modificado el archivo pwdump.txt de la siguiente manera:
 
