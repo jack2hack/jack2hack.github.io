@@ -1,7 +1,7 @@
 ---
 title: Como recuperar archivos eliminados con TestDisk & PhotoRec 
 date: 2020-05-20 23:30:09
-categories: tutorial
+categories: Forensics
 tags:
 - forensics
 ---
