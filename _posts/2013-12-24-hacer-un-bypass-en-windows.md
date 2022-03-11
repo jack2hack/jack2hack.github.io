@@ -1,5 +1,5 @@
 ---
-title: Como hacer un bypass en Windows y extraer todas las contraseñas
+title: Como hacer un bypass en Windows y extraer todas las contraseñas del fichero SAM
 date: 2013-12-24 23:29:53
 categories:
 - Foo
