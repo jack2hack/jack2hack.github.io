@@ -98,7 +98,11 @@ Una vez hecho esto ya hemos extraido todos los hashes del fichero SAM, así que 
 
 En mi caso, yo he modificado el archivo pwdump.txt de la siguiente manera:
 
+*PwDump sin modificar:
+
 ![PwDump.txt sin modificar](https://i.ibb.co/wSYnpr1/notepad-1.png)
+
+*PwDump modificado:
 
 ![PwDump.txt modificado](https://i.ibb.co/zVRj2B8/notepad-2.png)
 
