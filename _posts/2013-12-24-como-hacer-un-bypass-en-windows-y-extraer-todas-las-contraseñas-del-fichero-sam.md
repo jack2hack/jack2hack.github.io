@@ -56,7 +56,7 @@ net user administrator /active:yes
 
 Una vez activada la cuenta de administrador reiniciamos el ordenador y accedemos a la cuenta sin contraseña.
 
-Ya estamos dentro del sistema y además con permisos de administrador así que hemos ya realizado el bypass con éxito saltándonos el login de Windows, y ahora vamos a proceder a extraer los hashes del fichero SAM con PwDump.
+Ya estamos dentro del sistema y además con permisos de administrador así que hemos ya realizado el bypass saltándonos el login de Windows, y ahora vamos a proceder a extraer los hashes del fichero SAM con PwDump.
 
 PwDump es un programa que sirve para extraer los hashes de las contraseñas del fichero SAM y que es muy fácil de utilizar ya que solo hay que ejecutarlo.
 
