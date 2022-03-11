@@ -108,7 +108,7 @@ En mi caso, yo he modificado el archivo pwdump.txt de la siguiente manera:
 
 Una vez que tengamos los hashes volcados en el fichero de texto ya estamos listos para empezar a crackearlos .
 
-Para crackear los hashes utilizaremos un programa que como PwDump también es de Openwall llamado John the Ripper:
+Para crackear los hashes utilizaremos un programa llamado John the Ripper:
 
 ![John The Ripper](https://i.ibb.co/n3g4sZh/john-the-ripper.png)
 
