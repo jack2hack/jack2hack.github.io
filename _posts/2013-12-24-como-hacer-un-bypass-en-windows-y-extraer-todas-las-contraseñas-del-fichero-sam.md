@@ -150,7 +150,7 @@ john.exe –format=NT –wordlist=C:\Tools\john\run\rockyou.txt
 
 > Rockyou.txt es uno de los diccionarios más populares pero existen infinidad de diccionarios en internet.
 
-Una vez obtenida la contraseña podemos visualizarla introduciendo:
+Una vez obtenida la contraseña podemos visualizarla introduciendo el siguiente comando:
 
 ```sh
 john.exe –show –format=NT C:\Users\PH300\Documents\pwdump.txt
@@ -158,5 +158,7 @@ john.exe –show –format=NT C:\Users\PH300\Documents\pwdump.txt
 
 ![PwDump-2](https://i.ibb.co/4RDLG2L/pwdump-2.png)
 
-Y pues ya está. Con esto y un bizcocho hemos hecho un bypass en Windows, hemos extraido las contraseñas del fichero SAM utilizando PwDump y hemos crackeado las contraseñas con la versión de John the Ripper para Windows. Si bien es cierto que este proceso de cracking se basa en el uso de diccionarios también es cierto que las contraseñas que suelen utilizarse en las cuentas de usuario de Windows no suelen ser muy complejas. La mayoría de personas que se preocupan por sus contraseñas lo hacen con sus correos electrónicos, redes sociales y otros servicios de internet, y la mayoría de las veces es el mismo servicio que utilizan el que les obliga a utilizar una contraseña más o menos robusta, pero con las cuentas de Windows la gente no se preocupa mucho a la hora de elegir una clave porque suelen ser más confiados y porque el propio sistema operativo no te obliga a elegir una contraseña con números, letras mayúsculas, minúsculas y símbolos.
+Y pues ya está. Con esto y un bizcocho hemos hecho un bypass en Windows, hemos extraido las contraseñas del fichero SAM utilizando PwDump y hemos crackeado las contraseñas con John the Ripper.
+
+Si bien es cierto que este proceso de cracking se basa en el uso de diccionarios también es cierto que las contraseñas que suelen utilizarse en las cuentas de usuario de Windows no suelen ser muy complejas. La mayoría de personas que se preocupan por sus contraseñas lo hacen con sus correos electrónicos, redes sociales y otros servicios de internet, y la mayoría de las veces es el mismo servicio que utilizan el que les obliga a utilizar una contraseña más o menos robusta, pero con las cuentas de Windows la gente no se preocupa mucho a la hora de elegir una clave porque suelen ser más confiados y porque el propio sistema operativo no te obliga a elegir una contraseña con números, letras mayúsculas, minúsculas y símbolos.
 
