@@ -35,7 +35,7 @@ Seleccionamos **«Símbolo del sistema»** y se abrirá una consola de comandos:
 
 Introducimos los siguientes comandos:
 
-```
+```bat
 C:\
 cd windows\system32
 ren utilman.exe utilman.exe.bak
@@ -50,7 +50,7 @@ En este punto ya podriamos resetear la contraseña de cualquier cuenta y acceder
 
 Para activar la cuenta de administrador introducimos el siguiente comando:
 
-```
+```batch
 net user administrator /active:yes
 ```
 
