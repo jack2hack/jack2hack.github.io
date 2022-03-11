@@ -23,11 +23,11 @@ Después vamos a bootear el CD o USB, esperamos a que los archivos carguen y cua
 
 ![Programa de instalación de Windows](https://i.ibb.co/S67h828/windows-1.png)
 
-En la siguiente pantalla que te aparece, hacemos clic en «Reparar el equipo»:
+En la siguiente pantalla hacemos clic en «Reparar el equipo»:
 
 ![Reparar el equipo](https://i.ibb.co/JkTRdpy/windows-2.png)
 
-Y ahora hay que seleccionar una opción, elegimos «Solucionar problemas», y en la siguiente pantalla hacemos click en la opción de «Restablecer tu PC»:
+Y ahora seleccionamos «Solucionar problemas», y en la siguiente pantalla hacemos click en «Restablecer tu PC»:
 
 ![Solucionar problemas > Restablecer tu PC](https://i.ibb.co/3zbh6HC/windows-3.png)
 
@@ -44,9 +44,7 @@ ren utilman.exe utilman.exe.bak
 copy cmd.exe utilman.exe
 ```
 
-Con esto vamos a ir al directorio windows\system32, vamos a renombrar el archivo utilman.exe a utilman.exe.bak para hacer una copia de seguridad, vamos a hacer una copia del archivo cmd.exe y vamos a llamarla utilman.exe para que así cuando llamemos a utilman.exe se nos abra cmd.exe en su lugar.
-
-Utilman.exe es un fichero que tiene Windows para sacar el teclado en pantalla, la lupa y alguna otra cosa, y que podemos ejecutar desde la página de inicio de sesión en Windows así que cambiando su nombre vamos a engañar al sistema para que cuando llamemos a ultiman.exe se abra cmd.exe lo que nos permitirá ejecutar varias acciones desde la consola de comandos.
+Con estos comando lo que hacemos es ir al directorio windows\system32, vamos a renombrar el archivo utilman.exe a utilman.exe.bak para hacer una copia de seguridad, vamos a hacer una copia del archivo cmd.exe y vamos a llamarla utilman.exe para que así cuando llamemos a utilman.exe se nos abra cmd.exe en su lugar. Utilman.exe es un fichero que tiene Windows para sacar el teclado en pantalla, la lupa y alguna otra cosa, y que podemos ejecutar desde la página de inicio de sesión en Windows así que cambiando su nombre vamos a engañar al sistema para que cuando llamemos a ultiman.exe se abra cmd.exe lo que nos permitirá ejecutar varias acciones desde la consola de comandos.
 
 Cerramos la consola, apagamos el ordenador y quitamos el CD o USB.
 
