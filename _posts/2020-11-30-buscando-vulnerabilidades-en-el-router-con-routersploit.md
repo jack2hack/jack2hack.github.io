@@ -1,7 +1,7 @@
 ---
 title: Buscando vulnerabilidades en el router con RouterSploit
 date: 2020-11-30 23:33:26
-tags:
+tags: Pentesting
 ---
 
 This is a Japanese test post.
