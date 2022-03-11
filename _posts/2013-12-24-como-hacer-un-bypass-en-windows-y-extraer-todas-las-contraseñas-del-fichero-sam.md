@@ -15,6 +15,8 @@ Imaginemos que tenemos un ordenador que tiene un sistema de Windows instalado y 
 
 Para esto primero vamos a hacer un bypass para ganar acceso al sistema, después vamos a extraer los hashes del fichero SAM usando PwDump v8.2 y finalmente vamos a proceder a crackear los hashes utilizando John the Ripper.
 
+# 1. Bypass Windows
+
 Para hacer el bypass primero hay que preparar un CD/USB de instalación con Windows: [https://www.microsoft.com/es-es/software-download/windows10](https://www.microsoft.com/es-es/software-download/windows10)
 
 Después vamos a bootear el CD o USB, esperamos a que los archivos carguen y cuando aparezca la pantalla para elegir el idioma, formato de hora y moneda, y teclado o método de entrada hacemos click en el botón de «Siguiente»:
@@ -62,6 +64,8 @@ Una vez activada la cuenta de administrador reiniciamos el ordenador y entramos 
 
 Ya estamos dentro del sistema así que hemos ya realizado el bypass con éxito, y ahora vamos a proceder a extraer los hashes del fichero SAM con PwDump.
 
+# 2. Extrayendo los hashes del fichero SAM con PwDump
+
 PwDump es un programa que sirve para extraer los hashes de las contraseñas del fichero SAM y que es muy fácil de utilizar ya que solo hay que ejecutarlo.
 
 Vamos a descargar PwDump (Versión v8.82) desde la página de openwall.net:
@@ -82,7 +86,7 @@ pwdump8.exe
 
 A continuación se mostrará en pantalla un listado con todos los hashes de contraseñas extraidos y ya podríamos proceder a guardarlos, pero antes quiero explicar cómo se compone el formato que nos muestra PwDump:
 
-# Nombre de usuario : ID de usuario : Hash de la contraseña en LM : Hash de la contraseña en NTLM
+Nombre de usuario : ID de usuario : Hash de la contraseña en LM : Hash de la contraseña en NTLM
 
 El hash que guarda la contraseña es el hash de la contraseña en NTLM, así que ese es el hash que necesitamos para intentar crackear la contraseña.
 
@@ -105,6 +109,8 @@ En mi caso, yo he modificado el archivo pwdump.txt de la siguiente manera:
 ![PwDump.txt sin modificar](https://i.ibb.co/wSYnpr1/notepad-1.png)
 
 ![PwDump.txt modificado](https://i.ibb.co/zVRj2B8/notepad-2.png)
+
+# 3. Crackear los hashes con John The Ripper
 
 Para crackear los hashes utilizaremos un programa llamado John the Ripper:
 
