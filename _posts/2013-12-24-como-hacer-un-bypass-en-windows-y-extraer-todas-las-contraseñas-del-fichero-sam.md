@@ -82,11 +82,11 @@ Nombre de usuario : ID de usuario : Hash de la contraseña en LM : Hash de la co
 
 El hash que guarda la contraseña es el hash de la contraseña en NTLM, así que ese es el hash que necesitamos para intentar crackear la contraseña. Como se puede ver en la imagen los usuarios «Administrador», «Invitado» y «DefaultAccount» tienen exactamente el mismo hash de contraseña en NTLM: «31D6CFE0D16AE931B73C59D7E0C089C0». Este hash es el resultado de una contraseña vacía, y si crackeamos este hash no obtendremos nada así que es bueno saber esto y recordarlo cuando trabajemos con hashes en NTLM.
 
-En este caso la cuenta de la que queremos extraer la contraseña se llama «PH300» y como se puede ver en la imagen tiene un hash NTLM diferente.
+En este caso la cuenta de la que queremos extraer la contraseña se llama «PH300» y como se puede ver en la imagen tiene un hash NTLM diferente porque no tiene una contraseña vacía
 
 Lo que tenemos que hacer ahora es volcar todos los hashes en un fichero.
 
-Podemos copiar el resultado que nos muestra PwDump en un fichero de texto o introducir este comando para automatizar el proceso desde CMD:
+Podemos copiar el resultado que nos muestra PwDump en un fichero de texto o introducir este comando:
 
 ```sh
 pwdump8.exe > pwdump.txt
