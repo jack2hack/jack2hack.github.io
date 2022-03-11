@@ -17,19 +17,19 @@ Para esto primero vamos a hacer un bypass para ganar acceso al sistema, después
 
 Para hacer el bypass primero hay que preparar un CD/USB de instalación con Windows: [https://www.microsoft.com/es-es/software-download/windows10](https://www.microsoft.com/es-es/software-download/windows10)
 
-Después vamos a bootear el CD o USB, esperamos a que los archivos carguen y cuando aparezca la pantalla para elegir el idioma, formato de hora y moneda, y teclado o método de entrada hacemos click en el botón de «Siguiente»:
+Después vamos a bootear el CD o USB, esperamos a que los archivos carguen y cuando aparezca la pantalla para elegir el idioma, formato de hora y moneda, y teclado o método de entrada hacemos click en el botón de **«Siguiente»**:
 
 ![Programa de instalación de Windows](https://i.ibb.co/S67h828/windows-1.png)
 
-En la siguiente pantalla hacemos clic en «Reparar el equipo»:
+En la siguiente pantalla hacemos clic en **«Reparar el equipo»**:
 
 ![Reparar el equipo](https://i.ibb.co/JkTRdpy/windows-2.png)
 
-Y ahora seleccionamos «Solucionar problemas», y en la siguiente pantalla hacemos click en «Restablecer tu PC»:
+Y ahora seleccionamos «Solucionar problemas», y en la siguiente pantalla hacemos click en **«Restablecer tu PC»**:
 
 ![Solucionar problemas > Restablecer tu PC](https://i.ibb.co/3zbh6HC/windows-3.png)
 
-Seleccionamos «Símbolo del sistema» y se abrirá una consola de comandos:
+Seleccionamos **«Símbolo del sistema»** y se abrirá una consola de comandos:
 
 ![Opciones avanzadas > Símbolo del sistema](https://i.ibb.co/frJgfdr/windows-4.png)
 
