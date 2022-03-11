@@ -58,6 +58,8 @@ Una vez activada la cuenta de administrador reiniciamos el ordenador y accedemos
 
 Ya estamos dentro del sistema y además con permisos de administrador así que ya hemos realizado el bypass saltándonos el login de Windows, y ahora vamos a proceder a extraer los hashes del fichero SAM con PwDump.
 
+<p align="center">Extrayendo los hashes del fichero SAM con PwDump</p>
+
 PwDump es un programa de Openwall que sirve para extraer los hashes de las contraseñas del fichero SAM.
 
 Vamos a descargar `PwDump (Versión v8.82)` desde la página oficial de Openwall:
@@ -107,6 +109,8 @@ En mi caso, yo he modificado el archivo pwdump.txt de la siguiente manera:
 ![pwdump.txt modificado](https://i.ibb.co/zVRj2B8/notepad-2.png)
 
 Una vez que tengamos los hashes volcados en el fichero de texto ya estamos listos para empezar a crackearlos.
+
+<p align="center">Crackeando los hashes con John The Ripper</p>
 
 Para crackear los hashes utilizaremos un programa muy conocido en el mundo del hacking llamado John the Ripper:
 
