@@ -1,5 +1,5 @@
 ---
-title: Crackear los hashes del archivo /etc/shadow en Linux
+title: Recuperando archivos eliminados con TestDisk & PhotoRec 
 date: 2013-12-24 23:30:09
 categories:
 - Foo
