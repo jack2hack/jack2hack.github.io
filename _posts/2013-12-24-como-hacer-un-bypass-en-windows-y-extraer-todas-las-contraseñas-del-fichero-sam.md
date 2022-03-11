@@ -15,8 +15,6 @@ Imaginemos que tenemos un ordenador que tiene un sistema de Windows instalado y 
 
 Para esto primero vamos a hacer un bypass para ganar acceso al sistema, después vamos a extraer los hashes del fichero SAM usando PwDump v8.2 y finalmente vamos a proceder a crackear los hashes utilizando John the Ripper.
 
-## Bypasseando el login de Windows
-
 Para hacer el bypass primero hay que preparar un CD/USB de instalación con Windows: [https://www.microsoft.com/es-es/software-download/windows10](https://www.microsoft.com/es-es/software-download/windows10)
 
 Después vamos a bootear el CD o USB, esperamos a que los archivos carguen y cuando aparezca la pantalla para elegir el idioma, formato de hora y moneda, y teclado o método de entrada hacemos click en el botón de «Siguiente»:
@@ -44,7 +42,7 @@ ren utilman.exe utilman.exe.bak
 copy cmd.exe utilman.exe
 ```
 
-Con estos comando lo que hacemos es ir al directorio windows\system32, vamos a renombrar el archivo utilman.exe a utilman.exe.bak para hacer una copia de seguridad, vamos a hacer una copia del archivo cmd.exe y vamos a llamarla utilman.exe para que así cuando llamemos a utilman.exe se nos abra cmd.exe en su lugar. Utilman.exe es un fichero que tiene Windows para sacar el teclado en pantalla, la lupa y alguna otra cosa, y que podemos ejecutar desde la página de inicio de sesión en Windows así que cambiando su nombre vamos a engañar al sistema para que cuando llamemos a ultiman.exe se abra cmd.exe lo que nos permitirá ejecutar varias acciones desde la consola de comandos.
+Con estos comandos lo que hacemos es ir al directorio windows\system32, renombrar el archivo utilman.exe a utilman.exe.bak para hacer una copia de seguridad, creamos una copia del archivo cmd.exe y la renombramos como utilman.exe para que así cuando llamemos a utilman.exe se nos abra cmd.exe en su lugar. Utilman.exe es un fichero que tiene Windows para sacar el teclado en pantalla, la lupa y alguna otra cosa, y que podemos ejecutar desde la página de inicio de sesión en Windows así que cambiando su nombre vamos a engañar al sistema para que cuando llamemos a ultiman.exe se abra cmd.exe lo que nos permitirá ejecutar varias acciones desde la consola de comandos.
 
 Cerramos la consola, apagamos el ordenador y quitamos el CD o USB.
 
@@ -61,8 +59,6 @@ net user administrator /active:yes
 Una vez activada la cuenta de administrador reiniciamos el ordenador y entramos en la cuenta de administrador sin introducir ninguna contraseña.
 
 Ya estamos dentro del sistema así que hemos ya realizado el bypass con éxito, y ahora vamos a proceder a extraer los hashes del fichero SAM con PwDump.
-
-## Extrayendo los hashes del fichero SAM
 
 PwDump es un programa que sirve para extraer los hashes de las contraseñas del fichero SAM y que es muy fácil de utilizar ya que solo hay que ejecutarlo.
 
@@ -107,8 +103,6 @@ En mi caso, yo he modificado el archivo pwdump.txt de la siguiente manera:
 ![PwDump.txt sin modificar](https://i.ibb.co/wSYnpr1/notepad-1.png)
 
 ![PwDump.txt modificado](https://i.ibb.co/zVRj2B8/notepad-2.png)
-
-## Crackear los hashes con John The Ripper
 
 Para crackear los hashes utilizaremos un programa llamado John the Ripper:
 
