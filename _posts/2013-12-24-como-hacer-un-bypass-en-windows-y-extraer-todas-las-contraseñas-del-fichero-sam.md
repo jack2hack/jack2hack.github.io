@@ -106,9 +106,9 @@ En mi caso, yo he modificado el archivo pwdump.txt de la siguiente manera:
 
 ![pwdump.txt modificado](https://i.ibb.co/zVRj2B8/notepad-2.png)
 
-Una vez que tengamos los hashes volcados en el fichero de texto ya estamos listos para empezar a crackearlos .
+Una vez que tengamos los hashes volcados en el fichero de texto ya estamos listos para empezar a crackearlos.
 
-Para crackear los hashes utilizaremos un programa llamado John the Ripper:
+Para crackear los hashes utilizaremos un programa muy conocido en el mundo del hacking llamado John the Ripper:
 
 ![John The Ripper](https://i.ibb.co/n3g4sZh/john-the-ripper.png)
 
