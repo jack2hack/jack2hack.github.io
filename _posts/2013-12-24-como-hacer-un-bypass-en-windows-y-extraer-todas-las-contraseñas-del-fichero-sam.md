@@ -44,11 +44,11 @@ copy cmd.exe utilman.exe
 
 Con estos comandos lo que hacemos es ir al directorio windows\system32, renombrar el archivo utilman.exe a utilman.exe.bak para hacer una copia de seguridad, creamos una copia del archivo cmd.exe y la renombramos como utilman.exe para que así cuando llamemos a utilman.exe se nos abra cmd.exe en su lugar. Utilman.exe es un fichero que tiene Windows para sacar el teclado en pantalla, la lupa y alguna otra cosa, y que podemos ejecutar desde la página de inicio de sesión en Windows así que cambiando su nombre vamos a engañar al sistema para que cuando llamemos a ultiman.exe se abra cmd.exe lo que nos permitirá ejecutar varias acciones desde la consola de comandos.
 
-Cerramos la consola, apagamos el ordenador y quitamos el CD o USB.
+Una vez hecho esto cerramos la consola, apagamos el ordenador y quitamos el CD o USB para que Windows arranque normalmente.
 
-Cuando el ordenador arranque y nos encontremos en la pantalla del login presionamos «Tecla de Windows + U» y se abrirá una consola de comandos.
+Cuando nos encontremos en la pantalla del login presionamos «Tecla de Windows + U» y se abrirá una consola de comandos.
 
-Bueno, ahora podriamos resetear la contraseña de cualquier cuenta y acceder con la nueva contraseña, pero lo que queremos es hackear la contraseña, así que lo que vamos a hacer es habilitar la cuenta de administrador para acceder al sistema y proceder a extraer los hashes del fichero SAM para crackearlos.
+En este punto ya podriamos resetear la contraseña de cualquier cuenta y acceder con la nueva contraseña, pero lo que queremos es obtener la contraseña y no cambiarla, así que lo que vamos a hacer es habilitar la cuenta de administrador para acceder al sistema y después vamos a extraer los hashes del fichero SAM para crackearlos.
 
 Introducimos el siguiente comando:
 
