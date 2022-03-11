@@ -4,9 +4,9 @@ date: 2013-12-24 23:29:53
 categories:
 - Foo
 tags:
-- Foo
-- Bar
-- Baz
+- Windows
+- Bypass
+- Cracking
 ---
 
 Hola a todos. En este post voy a enseñaros a cómo hacer un bypass en sistemas de Windows y extraer todas las contraseñas del fichero SAM. El fichero SAM (Security Account Manager) es un archivo que se encarga de almacenar las credenciales de los usuarios del sistema en Windows. Dentro de la SAM las contraseñas se almacenan en formato hash con LM/NTLM así que vamos a tener que crackear esos hashes para poder obtener las contraseñas.
