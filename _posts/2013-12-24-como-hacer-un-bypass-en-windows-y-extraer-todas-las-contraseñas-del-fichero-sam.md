@@ -78,7 +78,7 @@ pwdump8.exe
 
 A continuación se mostrará en pantalla un listado con todos los hashes de contraseñas extraidos y ya podríamos proceder a guardarlos, pero antes de nada quiero explicar cómo se compone el formato que nos muestra PwDump:
 
-Nombre de usuario : ID de usuario : Hash de la contraseña en LM : Hash de la contraseña en NTLM
+> Nombre de usuario : ID de usuario : Hash de la contraseña en LM : Hash de la contraseña en NTLM
 
 El hash que guarda la contraseña es el hash de la contraseña en NTLM, así que ese es el hash que necesitamos para intentar crackear la contraseña. Como se puede ver en la imagen los usuarios «Administrador», «Invitado» y «DefaultAccount» tienen exactamente el mismo hash de contraseña en NTLM: «31D6CFE0D16AE931B73C59D7E0C089C0». Este hash es el resultado de una contraseña vacía, y si crackeamos este hash no obtendremos nada así que es bueno saber esto y recordarlo cuando trabajemos con hashes en NTLM.
 
@@ -94,15 +94,15 @@ Podemos copiar el resultado que nos muestra PwDump en un fichero de texto o intr
 pwdump8.exe > pwdump.txt
 ```
 
-Una vez hecho esto ya hemos extraido todos los hashes del fichero SAM, así que ya lo único que nos queda es crackearlos para obtener las contraseñas, pero como he dicho tenemos hashes de cuentas por defecto con contraseñas vacías así que es recomendable modificar el archivo de texto pwdump.txt y eliminar los hashes que sabemos que nos van a devolver resultados nulos para organizar y facilitar el trabajo a la hora de crackearlos.
+Una vez hecho esto ya hemos extraido todos los hashes del fichero SAM, así que ya lo único que nos queda es crackearlos para obtener las contraseñas, pero como he dicho tenemos hashes de cuentas por defecto con contraseñas vacías así que es recomendable modificar el archivo de texto pwdump.txt y eliminar los hashes que sabemos que nos van a devolver resultados nulos para organizar y facilitar el trabajo a la hora de crackear los hashes.
 
 En mi caso, yo he modificado el archivo pwdump.txt de la siguiente manera:
 
-*PwDump sin modificar:
+* PwDump sin modificar:
 
 ![PwDump.txt sin modificar](https://i.ibb.co/wSYnpr1/notepad-1.png)
 
-*PwDump modificado:
+* PwDump modificado:
 
 ![PwDump.txt modificado](https://i.ibb.co/zVRj2B8/notepad-2.png)
 
