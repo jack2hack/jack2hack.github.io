@@ -78,7 +78,7 @@ pwdump8.exe
 
 A continuación se mostrará en pantalla un listado con todos los hashes de contraseñas extraidos y ya podríamos proceder a guardarlos, pero antes de nada quiero explicar cómo se compone el formato que nos muestra PwDump:
 
-> Nombre de usuario : ID de usuario : Hash de la contraseña en LM : Hash de la contraseña en NTLM
+> **Nombre de usuario : ID de usuario : Hash de la contraseña en LM : Hash de la contraseña en NTLM**
 
 El hash que guarda la contraseña es el hash de la contraseña en NTLM, así que ese es el hash que necesitamos para intentar crackear la contraseña. Como se puede ver en la imagen los usuarios «Administrador», «Invitado» y «DefaultAccount» tienen exactamente el mismo hash de contraseña en NTLM: «31D6CFE0D16AE931B73C59D7E0C089C0». Este hash es el resultado de una contraseña vacía, y si crackeamos este hash no obtendremos nada así que es bueno saber esto y recordarlo cuando trabajemos con hashes en NTLM.
 
