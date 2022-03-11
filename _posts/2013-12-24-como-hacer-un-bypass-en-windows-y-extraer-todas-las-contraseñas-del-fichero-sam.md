@@ -9,6 +9,8 @@ tags:
 - Cracking
 ---
 
+## Introducción
+
 Hola a todos. En este post voy a enseñaros a cómo hacer un bypass en sistemas de Windows y extraer todas las contraseñas del fichero SAM. El fichero **SAM (Security Account Manager)** es un archivo que se encarga de almacenar las credenciales de los usuarios del sistema en Windows. Dentro de la SAM las contraseñas se almacenan en formato hash con LM/NTLM así que vamos a tener que crackear esos hashes para poder obtener las contraseñas.
 
 Imaginemos que tenemos un ordenador que tiene un sistema de Windows instalado y que tiene una cuenta que está protegida con una contraseña. Nosotros no conocemos esa contraseña y lo que queremos no es solamente acceder al sistema, sino también conseguir la contraseña de esa cuenta y de cualquier otra cuenta existente en ese sistema.
@@ -166,6 +168,6 @@ john.exe –show –format=NT C:\Users\PH300\Documents\pwdump.txt
 
 Y pues ya está. Con esto y un bizcocho hemos hecho un bypass en Windows, hemos extraido las contraseñas del fichero SAM utilizando PwDump y hemos crackeado las contraseñas con John the Ripper utilizando un diccionario.
 
-**Reflexión final:**
+## Reflexión final
 
 Si bien es cierto que este proceso de cracking se basa en el uso de diccionarios y que por lo tanto su efectividad depende del diccionario utilizado, también es cierto que las contraseñas que suelen utilizarse en las cuentas de usuario de Windows no suelen ser muy complejas. La mayoría de personas que se preocupan por sus contraseñas lo hacen con sus correos electrónicos, redes sociales y otros servicios de internet, y la mayoría de las veces es el mismo servicio que utilizan el que les obliga a utilizar una contraseña más o menos robusta, pero con las cuentas de Windows la gente no se preocupa mucho a la hora de elegir una clave porque suelen ser más confiados y porque el propio sistema operativo no te obliga a elegir una contraseña con números, letras, mayúsculas, minúsculas y símbolos, así que este tipo de ataques por fuerza bruta suelen ser muy efectivos contra cuentas de usuario de Windows.
