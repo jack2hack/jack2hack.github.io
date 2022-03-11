@@ -15,7 +15,7 @@ Imaginemos que tenemos un ordenador que tiene un sistema de Windows instalado y 
 
 Para esto primero vamos a hacer un bypass para ganar acceso al sistema, después vamos a extraer los hashes del fichero SAM usando PwDump v8.2 y finalmente vamos a proceder a crackear los hashes utilizando John the Ripper.
 
-# 1. Bypass Windows
+### 1. Bypasseando el login de Windows
 
 Para hacer el bypass primero hay que preparar un CD/USB de instalación con Windows: [https://www.microsoft.com/es-es/software-download/windows10](https://www.microsoft.com/es-es/software-download/windows10)
 
@@ -64,7 +64,7 @@ Una vez activada la cuenta de administrador reiniciamos el ordenador y entramos 
 
 Ya estamos dentro del sistema así que hemos ya realizado el bypass con éxito, y ahora vamos a proceder a extraer los hashes del fichero SAM con PwDump.
 
-# 2. Extrayendo los hashes del fichero SAM con PwDump
+### 2. Extrayendo los hashes del fichero SAM con PwDump
 
 PwDump es un programa que sirve para extraer los hashes de las contraseñas del fichero SAM y que es muy fácil de utilizar ya que solo hay que ejecutarlo.
 
@@ -110,7 +110,7 @@ En mi caso, yo he modificado el archivo pwdump.txt de la siguiente manera:
 
 ![PwDump.txt modificado](https://i.ibb.co/zVRj2B8/notepad-2.png)
 
-# 3. Crackear los hashes con John The Ripper
+### 3. Crackear los hashes con John The Ripper
 
 Para crackear los hashes utilizaremos un programa llamado John the Ripper:
 
