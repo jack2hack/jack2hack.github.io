@@ -62,9 +62,9 @@ PwDump es un programa de Openwall que sirve para extraer los hashes de las contr
 
 Vamos a descargar `PwDump (Versión v8.82)` desde la página de openwall.net:
 
-![https://download.openwall.net/pub/projects/john/contrib/pwdump/pwdump8-8.2.zip](https://download.openwall.net/pub/projects/john/contrib/pwdump/pwdump8-8.2.zip)
+[https://download.openwall.net/pub/projects/john/contrib/pwdump/pwdump8-8.2.zip](https://download.openwall.net/pub/projects/john/contrib/pwdump/pwdump8-8.2.zip)
 
-NOTA IMPORTANTE: PwDump es un programa que suele ser detectado cómo malware, así que antes de descargarlo tienes que desactivar la protección de antivirus o en su defecto añadir el programa a lista de amenazas permitidas.
+NOTA IMPORTANTE: PwDump es un programa que suele ser detectado cómo malware, así que antes de descargarlo tienes que desactivar el antivirus o añadir el programa a lista de amenazas permitidas.
 
 Para ejecutar PwDump no basta con ejecutar el archivo.exe normalmente, hay que ejecutarlo desde la consola de comandos con permisos de administrador así que para hacer esto primero ejecutamos el CMD como administrador, y después nos ubicamos en el directorio donde hemos extraido el PwDump.
 
