@@ -64,7 +64,7 @@ Vamos a descargar `PwDump (Versión v8.82)` desde la página de openwall.net:
 
 [https://download.openwall.net/pub/projects/john/contrib/pwdump/pwdump8-8.2.zip](https://download.openwall.net/pub/projects/john/contrib/pwdump/pwdump8-8.2.zip)
 
-NOTA IMPORTANTE: PwDump es un programa que suele ser detectado cómo malware pero es inofensivo, así que antes de descargarlo tienes que desactivar el antivirus o añadir el programa a lista de amenazas permitidas.
+NOTA IMPORTANTE: PwDump es un programa que suele ser detectado cómo malware, así que antes de descargarlo tienes que desactivar el antivirus o añadir el programa a lista de amenazas permitidas.
 
 Para ejecutar PwDump no basta con ejecutar el archivo.exe normalmente, hay que ejecutarlo desde la consola de comandos con permisos de administrador así que para hacer esto primero ejecutamos el CMD como administrador, y después nos ubicamos en el directorio donde hemos extraido el PwDump.
 
@@ -80,9 +80,7 @@ A continuación se mostrará en pantalla un listado con todos los hashes de cont
 
 Nombre de usuario : ID de usuario : Hash de la contraseña en LM : Hash de la contraseña en NTLM
 
-El hash que guarda la contraseña es el hash de la contraseña en NTLM, así que ese es el hash que necesitamos para intentar crackear la contraseña.
-
-Como se puede ver en la imagen los usuarios «Administrador», «Invitado» y «DefaultAccount» tienen exactamente el mismo hash de contraseña en NTLM: «31D6CFE0D16AE931B73C59D7E0C089C0». Este hash es el resultado de una contraseña vacía, así que si crackeamos este hash no obtendremos nada.
+El hash que guarda la contraseña es el hash de la contraseña en NTLM, así que ese es el hash que necesitamos para intentar crackear la contraseña. Como se puede ver en la imagen los usuarios «Administrador», «Invitado» y «DefaultAccount» tienen exactamente el mismo hash de contraseña en NTLM: «31D6CFE0D16AE931B73C59D7E0C089C0». Este hash es el resultado de una contraseña vacía, así que si crackeamos este hash no obtendremos nada.
 
 En este caso la cuenta de la que queremos extraer la contraseña se llama «PH300» y como se puede ver en la imagen tiene un hash NTLM diferente.
 
