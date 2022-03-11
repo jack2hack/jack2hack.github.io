@@ -64,7 +64,7 @@ Una vez activada la cuenta de administrador reiniciamos el ordenador y entramos 
 
 Ya estamos dentro del sistema así que hemos ya realizado el bypass con éxito, y ahora vamos a proceder a extraer los hashes del fichero SAM con PwDump.
 
-### 2. Extrayendo los hashes del fichero SAM con PwDump
+### 2. Extrayendo los hashes del fichero SAM
 
 PwDump es un programa que sirve para extraer los hashes de las contraseñas del fichero SAM y que es muy fácil de utilizar ya que solo hay que ejecutarlo.
 
