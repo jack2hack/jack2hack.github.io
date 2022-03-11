@@ -82,11 +82,11 @@ Nombre de usuario : ID de usuario : Hash de la contraseña en LM : Hash de la co
 
 El hash que guarda la contraseña es el hash de la contraseña en NTLM, así que ese es el hash que necesitamos para intentar crackear la contraseña. Como se puede ver en la imagen los usuarios «Administrador», «Invitado» y «DefaultAccount» tienen exactamente el mismo hash de contraseña en NTLM: «31D6CFE0D16AE931B73C59D7E0C089C0». Este hash es el resultado de una contraseña vacía, y si crackeamos este hash no obtendremos nada así que es bueno saber esto y recordarlo cuando trabajemos con hashes en NTLM.
 
-En este caso la cuenta de la que queremos extraer la contraseña se llama «PH300» y su hash en NTLM es: 9A94EAF6396FEECA7AF086ABE06FC1DD4
+En este caso la cuenta de la que queremos extraer la contraseña se llama «PH300» y su hash en NTLM es: 
 
+> 9A94EAF6396FEECA7AF086ABE06FC1DD4
 
-
-Lo que vamos a hacer ahora es volcar todos los hashes en un fichero de texto.
+Lo que vamos a hacer ahora es volcar todos los hashes en un fichero de texto para poder trabajar con él.
 
 Podemos copiar el resultado que nos muestra PwDump en un fichero de texto o introducir este comando:
 
@@ -94,7 +94,7 @@ Podemos copiar el resultado que nos muestra PwDump en un fichero de texto o intr
 pwdump8.exe > pwdump.txt
 ```
 
-Una vez hecho esto ya hemos extraido todos los hashes del fichero SAM, así que ya lo único que nos queda es crackearlos para obtener las contraseñas, pero como he dicho tenemos hashes de cuentas por defecto con contraseñas vacías así que es recomendable modificar el archivo de texto pwdump.txt y eliminar los hashes que sabemos que nos van a devolver resultados nulos.
+Una vez hecho esto ya hemos extraido todos los hashes del fichero SAM, así que ya lo único que nos queda es crackearlos para obtener las contraseñas, pero como he dicho tenemos hashes de cuentas por defecto con contraseñas vacías así que es recomendable modificar el archivo de texto pwdump.txt y eliminar los hashes que sabemos que nos van a devolver resultados nulos para organizar y facilitar el trabajo a la hora de crackearlos.
 
 En mi caso, yo he modificado el archivo pwdump.txt de la siguiente manera:
 
