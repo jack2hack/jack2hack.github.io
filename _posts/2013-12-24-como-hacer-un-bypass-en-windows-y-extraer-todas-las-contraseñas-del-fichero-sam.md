@@ -112,13 +112,13 @@ Para crackear los hashes utilizaremos un programa llamado John the Ripper:
 
 ![John The Ripper](https://i.ibb.co/n3g4sZh/john-the-ripper.png)
 
-John the Ripper es un programa de criptografía que aplica fuerza bruta para descifrar contraseñas. Es capaz de romper varios algoritmos de cifrado o hash, y es una herramienta muy popular disponible para sistemas Windows y Linux.
+John the Ripper es un programa de criptografía que aplica fuerza bruta para descifrar contraseñas. Es capaz de romper varios algoritmos de cifrado o hash, y es una herramienta muy popular disponible para Windows y Linux.
 
 Como todos los pasos de este articulo se están haciendo desde Windows, en esta ocasión voy a usar la versión de John the Ripper para Windows aunque para este tipo de cosas yo prefiero Linux porque que me siento más cómodo.
 
 Bueno, ahora vamos a descargar la versión de John the Ripper para Windows:
 
-![https://www.openwall.com/john/k/john-1.9.0-jumbo-1-win64.zip](https://www.openwall.com/john/k/john-1.9.0-jumbo-1-win64.zip)
+[https://www.openwall.com/john/k/john-1.9.0-jumbo-1-win64.zip](https://www.openwall.com/john/k/john-1.9.0-jumbo-1-win64.zip)
 
 Después extraemos los ficheros y ejecutamos el CMD como administrador.
 
@@ -158,4 +158,5 @@ john.exe –show –format=NT C:\Users\PH300\Documents\pwdump.txt
 
 ![PwDump-2](https://i.ibb.co/4RDLG2L/pwdump-2.png)
 
-Y pues ya está. Con esto y un bizcocho hemos hecho un bypass en Windows, hemos extraido las contraseñas del fichero SAM utilizando PwDump y hemos crackeado las contraseñas con la versión de John the Ripper para Windows.
+Y pues ya está. Con esto y un bizcocho hemos hecho un bypass en Windows, hemos extraido las contraseñas del fichero SAM utilizando PwDump y hemos crackeado las contraseñas con la versión de John the Ripper para Windows. Si bien es cierto que este proceso de cracking se basa en el uso de diccionarios también es cierto que las contraseñas que suelen utilizarse en las cuentas de usuario de Windows no suelen ser muy complejas. La mayoría de personas que se preocupan por sus contraseñas lo hacen con sus correos electrónicos, redes sociales y otros servicios de internet, y la mayoría de las veces es el mismo servicio que utilizan el que les obliga a utilizar una contraseña más o menos robusta, pero con las cuentas de Windows la gente no se preocupa mucho a la hora de elegir una clave porque suelen ser más confiados y porque el propio sistema operativo no te obliga a elegir una contraseña con números, letras mayúsculas, minúsculas y símbolos.
+
