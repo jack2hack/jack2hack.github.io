@@ -84,7 +84,7 @@ El hash que guarda la contraseña es el hash de la contraseña en NTLM, así que
 
 En este caso la cuenta de la que queremos extraer la contraseña se llama «PH300» y su hash en NTLM es: 
 
-> 9A94EAF6396FEECA7AF086ABE06FC1DD4
+> **9A94EAF6396FEECA7AF086ABE06FC1DD4**
 
 Lo que vamos a hacer ahora es volcar todos los hashes en un fichero de texto para poder trabajar con él.
 
