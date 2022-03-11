@@ -158,7 +158,7 @@ john.exe –show –format=NT C:\Users\PH300\Documents\pwdump.txt
 
 ![PwDump-2](https://i.ibb.co/4RDLG2L/pwdump-2.png)
 
-Y pues ya está. Con esto y un bizcocho hemos hecho un bypass en Windows, hemos extraido las contraseñas del fichero SAM utilizando PwDump y hemos crackeado las contraseñas con John the Ripper.
+Y pues ya está. Con esto y un bizcocho hemos hecho un bypass en Windows, hemos extraido las contraseñas del fichero SAM utilizando PwDump y hemos crackeado las contraseñas con John the Ripper utilizando el diccionario por defecto.
 
 **Reflexión final:**
 
