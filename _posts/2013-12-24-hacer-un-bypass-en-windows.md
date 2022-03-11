@@ -1,5 +1,5 @@
 ---
-title: Hacer un bypass en Windows
+title: Como hacer un bypass en Windows y extraer todas las contraseñas
 date: 2013-12-24 23:29:53
 categories:
 - Foo
