@@ -150,7 +150,7 @@ john.exe –format=NT –wordlist=C:\Tools\john\run\rockyou.txt
 
 > Rockyou.txt es uno de los diccionarios más populares pero existen infinidad de diccionarios en internet.
 
-Una vez obtenida la contraseña podemos visualizarla introduciendo el siguiente comando:
+Una vez que hayamos obtenido la contraseña podemos visualizarla introduciendo el siguiente comando:
 
 ```
 john.exe –show –format=NT C:\Users\PH300\Documents\pwdump.txt
