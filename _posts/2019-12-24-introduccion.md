@@ -2,7 +2,7 @@
 title: Introducción
 date: 2019-12-24 23:29:08
 categories:
-- blog
+- Blog
 tags:
 ---
 
