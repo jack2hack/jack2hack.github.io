@@ -2,7 +2,7 @@
 title: Como hacer un bypass en Windows y extraer todas las contraseñas del fichero SAM
 date: 2020-01-24 23:29:53
 categories:
-- tutorial
+- Windows
 tags:
 - Windows
 - Bypass
