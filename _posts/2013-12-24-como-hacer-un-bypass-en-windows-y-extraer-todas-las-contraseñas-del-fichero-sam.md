@@ -62,7 +62,7 @@ Ya estamos dentro del sistema así que hemos ya realizado el bypass con éxito, 
 
 PwDump es un programa que sirve para extraer los hashes de las contraseñas del fichero SAM y que es muy fácil de utilizar ya que solo hay que ejecutarlo.
 
-Vamos a descargar PwDump (Versión v8.82) desde la página de openwall.net:
+Vamos a descargar `PwDump (Versión v8.82)` desde la página de openwall.net:
 
 ![https://download.openwall.net/pub/projects/john/contrib/pwdump/pwdump8-8.2.zip](https://download.openwall.net/pub/projects/john/contrib/pwdump/pwdump8-8.2.zip)
 
