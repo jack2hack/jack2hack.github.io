@@ -1,7 +1,7 @@
 ---
-title: Recuperando archivos eliminados con TestDisk & PhotoRec 
+title: Como recuperar archivos eliminados con TestDisk & PhotoRec 
 date: 2013-12-24 23:30:09
-categories:
+categories: tutorial
 - Foo
 - Bar
 - Baz
