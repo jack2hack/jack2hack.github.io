@@ -48,13 +48,13 @@ Una vez hecho esto cerramos la consola, apagamos el ordenador y quitamos el CD o
 
 En este punto ya podriamos resetear la contraseña de cualquier cuenta y acceder con la nueva contraseña, pero lo que queremos es obtener la contraseña y no cambiarla, así que lo que vamos a hacer es habilitar la cuenta de administrador para acceder al sistema y después vamos a extraer los hashes del fichero SAM para crackearlos.
 
-Introducimos el siguiente comando:
+Para activar la cuenta de administrador introducimos el siguiente comando:
 
 ```sh
 net user administrator /active:yes
 ```
 
-Una vez activada la cuenta de administrador reiniciamos el ordenador y entramos en la cuenta de administrador sin introducir ninguna contraseña.
+Una vez activada la cuenta de administrador reiniciamos el ordenador y accedemos a la cuenta sin contraseña.
 
 Ya estamos dentro del sistema así que hemos ya realizado el bypass con éxito, y ahora vamos a proceder a extraer los hashes del fichero SAM con PwDump.
 
