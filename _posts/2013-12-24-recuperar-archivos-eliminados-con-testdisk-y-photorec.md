@@ -1,5 +1,5 @@
 ---
-title:  Recuperar archivos eliminados con TestDisk & PhotoRec
+title:  Crear una imagen forense y calcular sus hashes para garantizar su integridad
 date: 2013-12-24 23:31:06
 categories:
 - Foo
