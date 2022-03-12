@@ -8,7 +8,7 @@ tags:
 - Cracking
 ---
 
-Hola a todos. En este post os voy a demostrar cómo se pueden crackear los hashes del archivo /etc/shadow en Linux. El fichero /etc/shadow es un archivo que almacena las contraseñas cifradas de todas las cuentas de usuario en Linux. 
+Hola a todos. En este post os voy a demostrar cómo se pueden crackear los hashes del archivo /etc/shadow en Linux. El fichero /etc/shadow es un archivo que almacena las contraseñas cifradas de las cuentas de usuario en Linux, y que también guarda otra informácion útil sobre las cuentas cómo la última modificación de la contraseña, la fecha de caducidad, etc.
 
 Para poder leer este archivo necesitaremos permisos de root (administrador), y para visualizar el contenido por pantalla abrimos una terminal e introducimos el siguiente comando: 
 
