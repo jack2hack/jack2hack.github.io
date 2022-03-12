@@ -7,4 +7,4 @@ tags:
 - Forensics
 ---
 
-This post has a long title. Make sure the title displayed right.
+Hola a todos. En este post voy a enseñaros a crear una imagen forense y calcular sus hashes para garantizar su integridad.
