@@ -7,4 +7,4 @@ tags:
 - Forensics
 ---
 
-Hola a todos. En este post vamos a crear una imagen forense y calcular sus hashes para garantizar su integridad.
+Hola a todos. En este post vamos a crear una imagen forense y a calcular sus hashes para garantizar su integridad.
