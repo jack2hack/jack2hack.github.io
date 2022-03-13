@@ -31,9 +31,9 @@ $2$=Blowfish
 $5$=SHA-256
 $6$=SHA-512`
 
-Ya que sabemos un poquito más acerca del archivo shadow y de los tipos de cifrado que utiliza este fichero vamos a pasar a la práctica y vamos a crackear este mismo fichero de mi propio sistema Kali Linux instalado en una máquina virtual.
+Ya que sabemos un poquito más acerca del archivo shadow y de los tipos de cifrado que utiliza este fichero vamos a pasar a la práctica y vamos a crackear este mismo fichero de mi propio sistema Kali Linux instalado en mi virtualbox.
 
-Si no tuvieramos privilegios de root tendríamos que buscar la forma de escalar privilegios en Linux, pero como en este caso se trata de nuestro propio sistema así que no será necesario porque tenemos control total del sistema.
+Si no tuvieramos privilegios de root tendríamos que buscar la forma de escalar privilegios en Linux, pero como en este caso se trata de nuestro propio sistema no será necesario porque tenemos control total del sistema.
 
 Bueno, lo primero que vamos a hacer va a ser copiar el contenido del archivo /etc/shadow/ en otro fichero para proceder a crackear los hashes utilizando John the Ripper así que abrimos una terminal y escribimos lo siguiente:
 
