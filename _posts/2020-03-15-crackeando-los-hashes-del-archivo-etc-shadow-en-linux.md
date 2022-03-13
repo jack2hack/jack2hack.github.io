@@ -51,20 +51,18 @@ sudo cat shadow
 
 Como podemos ver en la imagen de arriba, el cifrado es «$y$» lo que por una simple búsqueda en google podemos descubrir que se trata de yescrypt, y que también se trata del nuevo cifrado por defecto utilizado en GNU/Linux.
 
-Sabiendo cual es el tipo de cifrado, ahora ya podemos proceder a crackearlo con John the Ripper ejecutando la siguiente instrucción desde una terminal:
+Sabiendo cual es el tipo de cifrado, ahora ya podemos proceder a crackearlo con John the Ripper ejecutando:
 
 
 ```sh
 john –format=crypt shadow
 ```
 
-Como hemos indicado el tipo de cifrado pero no hemos indicado ningún diccionario, se utilizará password.lst que es el diccionario que viene por defecto en John the Ripper y que suele funcionar con contraseñas sencillas.
+Como hemos indicado el tipo de cifrado pero no hemos indicado ningún diccionario, se utilizará password.lst que es el diccionario que viene por defecto en John the Ripper y que suele funcionar muy bien con contraseñas sencillas.
 
 ![Resultado del comando john –format=crypt shadow](https://i.ibb.co/NT693tY/kali3.png)
 
-Y como puede verse en la imagen la contraseñas ha sido encontrada utilizado el diccionario por defecto porque es una contraseña relativamente sencilla.
-
-Para visualizar la contraseña de nuevo utilizaremos el siguiente comando:
+Y como puede verse en la imagen la contraseña ha sido encontrada utilizado el diccionario por defecto porque es una contraseña relativamente sencilla. Para visualizar la contraseña de nuevo utilizaremos el siguiente comando:
 
 
 ```sh
