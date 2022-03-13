@@ -31,7 +31,7 @@ $2$=Blowfish
 $5$=SHA-256
 $6$=SHA-512`
 
-Ya sabemos un poquito más acerca del archivo shadow así que vamos a pasar a la práctica y vamos a crackear este mismo fichero en mi sistema Kali Linux.
+Ya que sabemos un poquito más acerca del archivo shadow y de los tipos de cifrado que utiliza vamos a pasar a la práctica y vamos a crackear este mismo fichero en mi sistema Kali Linux.
 
 Si no tuvieramos privilegios de root tendríamos que buscar la forma de escalar privilegios en Linux, pero en este caso se trata de nuestro propio sistema así que no será necesario porque tenemos control total del sistema.
 
