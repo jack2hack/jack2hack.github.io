@@ -58,7 +58,7 @@ Sabiendo cual es el tipo de cifrado, ahora ya podemos proceder a crackearlo con 
 john –format=crypt shadow
 ```
 
-Como hemos indicado el tipo de cifrado pero no hemos indicado ningún diccionario, se utilizará password.lst que es el diccionario que viene por defecto en John the Ripper y que suele funcionar muy bien con contraseñas sencillas.
+Como hemos indicado el tipo de cifrado pero no hemos indicado ningún diccionario, se utilizará **«password.lst»** que es el diccionario que viene por defecto en John the Ripper y que suele funcionar muy bien con contraseñas sencillas.
 
 ![Resultado del comando john –format=crypt shadow](https://i.ibb.co/NT693tY/kali3.png)
 
@@ -71,7 +71,7 @@ john –show –format=crypt shadow
 
 ![Resultado del comando john –show –format=crypt shadow](https://i.ibb.co/CQCMn18/kali4.png)
 
-Si no tuvieramos éxito con el diccionario por defecto podemos utilizar otros diccionarios como por ejemplo «rockyou» con el argumento «wordlist=path». Con «path» me refiero a la ruta donde tenemos guardado el diccionario que queremos utilizar pero para una mejor explicación aquí va un ejemplo en la terminal de comandos:
+Si no tuvieramos éxito con el diccionario por defecto podemos utilizar otros diccionarios como por ejemplo **«rockyou»** con el argumento **«wordlist=path»**. Con «path» me refiero a la ruta donde tenemos guardado el diccionario que queremos utilizar pero para una mejor explicación aquí va un ejemplo en la terminal de comandos:
 
 ```sh
 john –format=crypt –wordlist=home/kali/Desktop/rockyou.txt
