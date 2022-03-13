@@ -26,10 +26,10 @@ Este archivo almacena la contraseña en formato cifrado y lo que hay entre los s
 
 Este es un resumen de los cifrados más conocidos en el archivo shadow:
 
-`$1$=MD5
-$2$=Blowfish
-$5$=SHA-256
-$6$=SHA-512`
+`$1$=MD5`
+`$2$=Blowfish`
+`$5$=SHA-256`
+`$6$=SHA-512`
 
 Ya que sabemos un poquito más acerca del archivo shadow y de los tipos de cifrado que utiliza este fichero vamos a pasar a la práctica y vamos a crackear este mismo fichero de mi propio sistema Kali Linux instalado en mi virtualbox.
 
@@ -41,7 +41,7 @@ Bueno, lo primero que vamos a hacer va a ser copiar el contenido del archivo /et
 sudo cp /etc/shadow shadow
 ```
 
-Ahora visualizamos el contenido del archivo shadow para averiguar cual es el tipo de algortimo de cifrado que se ha utilizado para cifrar la contraseña:
+Y ahora vamos a visualizar el contenido del archivo shadow para averiguar cual es el tipo de algortimo de cifrado que se ha utilizado para cifrar la contraseña de la cuenta "root":
 
 ```sh
 sudo cat shadow
@@ -77,5 +77,5 @@ Si no tuvieramos éxito con el diccionario por defecto podemos utilizar otros di
 john –format=crypt –wordlist=home/kali/Desktop/rockyou.txt
 ```
 
-Y pues ya está. Con esto ya hemos aprendido a crackear las contraseñas del archivo /etc/shadow. Recordad que lo primero que tenemos que hacer es identificar el tipo de cifrado y después indicarselo a John the Ripper con el argumento «–format=», y tened en cuenta que tendremos que utilizar uno o varios diccionarios dependiendo siempre de la complejidad de la contraseña.
+Y pues ya está. Con esto ya hemos terminado. Esto es un ejemplo claro de lo fácil que es crackear las contraseñas del archivo /etc/shadow. Recordad que lo primero que tenemos que hacer es identificar el tipo de cifrado y después indicarselo a John the Ripper con el argumento «–format=», y tened en cuenta que tendremos que utilizar uno o varios diccionarios dependiendo siempre de la complejidad de la contraseña.
     
