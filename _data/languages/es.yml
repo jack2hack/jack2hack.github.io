@@ -1,41 +1,41 @@
 title:
-  archive: Archive
-  category: Category
-  tag: Tag
-  schedule: Schedule
-  archives: Archives
-  categories: Categories
-  tags: Tags
+  archive: Archivo
+  category: Categoría
+  tag: Etiqueta
+  schedule: Calendario
+  archives: Archivos
+  categories: Categorías
+  tags: Etiquetas
   about: About
 
 author: Author
 
 menu:
-  home: Home
+  home: Inicio
   archives: Archivos
   categories: Categories
   tags: Etiquetas
   about: About
   search: Buscar
-  schedule: Schedule
+  schedule: Calendario
   sitemap: Sitemap
   commonweal: Commonweal 404
 
 sidebar:
-  overview: Overview
-  toc: Table of Contents
+  overview: Visión General
+  toc: Tabla de Contenidos
 
 post:
-  created: Post created
-  modified: Post modified
+  created: Publicación creada
+  modified: Publicación modificada
   sticky: Sticky
-  posted: Posted on
-  in: In
-  more: more
-  read_more: Read more
-  untitled: Untitled
-  toc_empty: This post does not have a Table of Contents
-  visitors: Visitors
+  posted: Publicado en
+  in: En
+  more: más
+  read_more: Leer más
+  untitled: Sin título
+  toc_empty: Esta publicación no tiene una Tabal de Contenidos
+  visitors: Visitantes
   wordcount: Words count in article
   min2read: Reading time
   copyright:
@@ -70,10 +70,10 @@ counter:
     other: "%d posts in total."
 
 state:
-  posts: posts
-  pages: pages
-  tags: tags
-  categories: categories
+  posts: publicaciones
+  pages: páginas
+  tags: etiquetas
+  categories: categorías
 
 search:
   placeholder: Buscando...
@@ -82,11 +82,11 @@ cheers:
   um: Um..
   ok: OK
   nice: Nice
-  good: Good
-  great: Great
-  excellent: Excellent
+  good: Bien
+  great: Genial
+  excellent: Excelente
 
-keep_on: Keep on posting.
+keep_on: Sigue publicando.
 
 symbol:
   comma: ', '
