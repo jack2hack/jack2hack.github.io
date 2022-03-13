@@ -77,5 +77,5 @@ Si no tuvieramos éxito con el diccionario por defecto podemos utilizar otros di
 john –format=crypt –wordlist=home/kali/Desktop/rockyou.txt
 ```
 
-Y pues ya está. Con esto ya hemos terminado. Esto es un ejemplo claro de lo fácil que es crackear las contraseñas del archivo /etc/shadow. Recordad que lo primero que tenemos que hacer es identificar el tipo de cifrado y después indicarselo a John the Ripper con el argumento «–format=», y tened en cuenta que tendremos que utilizar uno o varios diccionarios dependiendo siempre de la complejidad de la contraseña.
+Y pues ya está. Con esto ya hemos terminado. Así de fácil que es crackear las contraseñas del archivo /etc/shadow. Recordad que lo primero que tenemos que hacer es identificar el tipo de cifrado y después indicarselo a John the Ripper con el argumento «–format=», y tened en cuenta que tendremos que utilizar uno o varios diccionarios dependiendo siempre de la complejidad de la contraseña.
     
