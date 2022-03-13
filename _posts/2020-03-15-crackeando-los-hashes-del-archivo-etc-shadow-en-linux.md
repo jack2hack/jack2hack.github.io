@@ -27,11 +27,8 @@ Este archivo almacena la contraseña en formato cifrado y lo que hay entre los s
 Este es un resumen de los cifrados más conocidos en el archivo shadow:
 
 `$1$=MD5`
-
 `$2$=Blowfish`
-
 `$5$=SHA-256`
-
 `$6$=SHA-512`
 
 Ya que sabemos un poquito más acerca del archivo shadow y de los tipos de cifrado que utiliza este fichero vamos a pasar a la práctica y vamos a crackear este mismo fichero de mi propio sistema Kali Linux instalado en mi virtualbox.
@@ -44,7 +41,7 @@ Bueno, lo primero que vamos a hacer va a ser copiar el contenido del archivo /et
 sudo cp /etc/shadow shadow
 ```
 
-Y ahora vamos a visualizar el contenido del archivo shadow para averiguar cual es el tipo de algortimo de cifrado que se ha utilizado para cifrar la contraseña de la cuenta que queremos crackear, en mi caso la cuenta es "kali":
+Y ahora vamos a visualizar el contenido del archivo shadow para averiguar cual es el tipo de algortimo de cifrado que se ha utilizado para cifrar la contraseña de la cuenta que queremos crackear, en mi caso la cuenta se llama "kali":
 
 ```sh
 sudo cat shadow
