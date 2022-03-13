@@ -71,9 +71,7 @@ john –show –format=crypt shadow
 
 ![Resultado del comando john –show –format=crypt shadow](https://i.ibb.co/CQCMn18/kali4.png)
 
-Si no tuvieramos éxito con el diccionario por defecto podemos utilizar otros diccionarios como por ejemplo «rockyou» con el argumento «wordlist=path».
-
-Con «path» me refiero a la ruta donde tenemos guardado el diccionario que queremos usar pero para una mejor explicación aquí va un ejemplo en shell:
+Si no tuvieramos éxito con el diccionario por defecto podemos utilizar otros diccionarios como por ejemplo «rockyou» con el argumento «wordlist=path». Con «path» me refiero a la ruta donde tenemos guardado el diccionario que queremos usar pero para una mejor explicación aquí va un ejemplo en shell:
 
 ```sh
 john –format=crypt –wordlist=home/kali/Desktop/rockyou.txt
