@@ -41,7 +41,7 @@ Bueno, lo primero que vamos a hacer va a ser copiar el contenido del archivo /et
 sudo cp /etc/shadow shadow
 ```
 
-Y ahora vamos a visualizar el contenido del archivo shadow para averiguar cual es el tipo de algortimo de cifrado que se ha utilizado para cifrar la contraseña de la cuenta "root":
+Y ahora vamos a visualizar el contenido del archivo shadow para averiguar cual es el tipo de algortimo de cifrado que se ha utilizado para cifrar la contraseña de la cuenta que queremos, en mi caso la cuenta se es "kali":
 
 ```sh
 sudo cat shadow
