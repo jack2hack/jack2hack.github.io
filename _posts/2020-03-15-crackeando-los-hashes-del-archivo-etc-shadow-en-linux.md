@@ -35,13 +35,13 @@ Ya que sabemos un poquito más acerca del archivo shadow y de los tipos de cifra
 
 Si no tuvieramos privilegios de root tendríamos que buscar la forma de escalar privilegios en Linux, pero como en este caso se trata de nuestro propio sistema no será necesario porque tenemos permisos y control total del sistema.
 
-Bueno, lo primero que vamos a hacer va a ser copiar el contenido del archivo /etc/shadow/ en otro fichero para proceder a crackear los hashes utilizando John the Ripper así que abrimos una terminal y escribimos lo siguiente:
+Bueno, lo primero que vamos a hacer va a ser copiar el contenido del archivo /etc/shadow/ en otro fichero para proceder a crackear los hashes utilizando **John the Ripper** así que abrimos una terminal y escribimos lo siguiente:
 
 ```sh
 sudo cp /etc/shadow shadow
 ```
 
-Y ahora vamos a visualizar el contenido del archivo shadow para averiguar cual es el tipo de algortimo de cifrado que se ha utilizado para cifrar la contraseña de la cuenta que queremos crackear, en mi caso la cuenta se llama "kali":
+Y ahora vamos a visualizar el contenido del archivo shadow para averiguar cual es el tipo de algortimo de cifrado que se ha utilizado para cifrar la contraseña de la cuenta que queremos crackear, en mi caso la cuenta se llama **"kali"**:
 
 ```sh
 sudo cat shadow
@@ -49,7 +49,7 @@ sudo cat shadow
 
 ![Resultado del comando sudo cat /etc/shadow](https://i.ibb.co/C1bfbdP/kali2.png)
 
-Como podemos ver en la imagen de arriba, el cifrado es «$y$» lo que por una simple búsqueda en google podemos descubrir que se trata de yescrypt, y que también se trata del nuevo cifrado por defecto utilizado en GNU/Linux.
+Como podemos ver en la imagen de arriba, el cifrado es **«$y$»** lo que por una simple búsqueda en google podemos descubrir que se trata de **«yescrypt»**, y que también se trata del nuevo cifrado por defecto utilizado en GNU/Linux.
 
 Sabiendo cual es el tipo de cifrado, ahora ya podemos proceder a crackearlo con John the Ripper ejecutando:
 
