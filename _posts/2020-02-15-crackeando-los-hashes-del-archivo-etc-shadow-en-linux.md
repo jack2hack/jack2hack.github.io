@@ -1,6 +1,6 @@
 ---
 title: Crackeando los hashes del archivo /etc/shadow en Linux 
-date: 2020-03-15 23:30:04
+date: 2020-02-15 23:30:04
 categories:
 - Linux
 tags:
