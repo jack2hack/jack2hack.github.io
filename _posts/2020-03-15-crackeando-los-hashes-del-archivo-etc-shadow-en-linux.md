@@ -18,7 +18,7 @@ sudo cat /etc/shadow
 
 ![Resultado del comando sudo cat /etc/shadow](https://i.ibb.co/Rvnhtq1/kali1.png)
 
-Como puede verse en la imagen de arriba, el contenido del archivo shadow tiene nueve campos que se representan como se muestra a continuación:
+Como puede verse en la imagen de arriba, el contenido del archivo shadow tiene varias entradas y cada una de ellas tiene nueve campos que se representan como se muestra a continuación:
 
 ![Explicación del archivo shadow en Linux](https://i.ibb.co/VJY6jdq/shadow.png)
 
