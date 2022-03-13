@@ -22,7 +22,7 @@ Como puede verse en la imagen de arriba, el contenido del archivo /etc/shadow ti
 
 ![Explicación del archivo shadow en Linux](https://i.ibb.co/VJY6jdq/shadow.png)
 
-Este archivo almacena la contraseña en formato cifrado y lo que hay entre los signos del dólar indica el tipo de cifrado que en el caso de esta imagen es **«$6$»** lo que quiere decir que el tipo de cifrado utilizado aquí es **«SHA-512»**.
+Este archivo almacena la contraseña en formato cifrado y lo que hay entre los signos del dólar indica el tipo de cifrado que en el caso de esta imagen es **«$6$»** lo que significa que el tipo de cifrado utilizado aquí es **«SHA-512»**.
 
 Este es un resumen de los cifrados más conocidos en el archivo shadow:
 
