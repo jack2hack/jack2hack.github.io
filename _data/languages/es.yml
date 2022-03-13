@@ -8,7 +8,7 @@ title:
   tags: Etiquetas
   about: About
 
-author: Author
+author: Autor
 
 menu:
   home: Inicio
@@ -46,28 +46,28 @@ post:
       <a href="%s" rel="external nofollow" target="_blank">%s</a> unless stating additionally.'
 
 page:
-  totally: Totally
-  tags: tags
+  totally: Totalmente
+  tags: etiquetas
 
 footer:
   powered: "Powered by %s"
-  theme: Theme
+  theme: Tema
 
 counter:
   tag_cloud:
     zero: No tags
-    one: 1 tag in total
-    other: "%d tags in total"
+    one: 1 etiqueta en total
+    other: "%d etiquetas en total"
 
   categories:
     zero: No categories
-    one: 1 category in total
-    other: "%d categories in total"
+    one: 1 categoría en total
+    other: "%d categorías en total"
 
   archive_posts:
     zero: No posts.
-    one: 1 post.
-    other: "%d posts in total."
+    one: 1 publicación.
+    other: "%d publicaciones en total."
 
 state:
   posts: publicaciones
