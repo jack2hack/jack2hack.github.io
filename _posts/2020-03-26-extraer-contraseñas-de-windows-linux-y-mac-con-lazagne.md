@@ -9,4 +9,4 @@ tags:
 - Mac
 ---
 
-Hola a todos. En este post vamos a ver como extraer contraseñas de sistemas Windows, Linux y Mac con LaZagne. LaZagne es una aplicación desarrollada por AlessandroZ que sirve para recuperar contraseñas guardadas en un sistema. Cada software almacena sus contraseñas utilizando diferentes técnicas (texto sin formato, API, algoritmos personalizados, bases de datos, etc) y esta herramienta ha sido desarrollada para encontrar estas contraseñas.
+Hola a todos. En este post vamos a ver como extraer contraseñas de sistemas Windows, Linux y Mac con LaZagne. LaZagne es una aplicación desarrollada por AlessandroZ que sirve para recuperar contraseñas guardadas en la memoria de un sistema. Cada software almacena sus contraseñas utilizando diferentes técnicas (texto sin formato, API, algoritmos personalizados, bases de datos, etc) y esta herramienta ha sido desarrollada para encontrar estas contraseñas.
