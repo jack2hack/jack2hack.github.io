@@ -2,7 +2,7 @@
 title: Extraer contraseñas de Windows, Linux y Mac con LaZagne
 date: 2020-03-26 22:46:49
 categories:
-- Password Recovery
+- Forensics
 tags:
 - Windows
 - Linux
