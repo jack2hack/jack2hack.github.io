@@ -21,7 +21,7 @@ Por lo tanto los ataques de fuerza bruta con Pc's tradicionales de 4 y 8 núcleo
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-Para esta demo he capturado el handshake de mi red wifi y por lo tanto el tipo de hash es WPA/WPA2.
+Para esta demo he capturado el handshake de mi red wifi y por lo tanto el tipo de hash a crackear es WPA/WPA2.
 
 Sabemos que la contraseña tiene 8 caracteres y que son todo digitos así que podríamos realizar un ataque de fuerza bruta para probar todas las combinaciones posibles indicando un charset de 8 caracteres y digitos del 0 al 9:
 
