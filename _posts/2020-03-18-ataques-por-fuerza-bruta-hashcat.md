@@ -1,10 +1,10 @@
 ---
-title: Crackeando los hashes del archivo /etc/shadow en Linux 
+title: Ataques por fuerza bruta en Hashcat
 date: 2020-03-15 23:30:04
 categories:
 - Linux
 tags:
-- Linux
+- Hashcat
 - Cracking
 ---
 
