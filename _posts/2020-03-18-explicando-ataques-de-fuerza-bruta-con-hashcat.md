@@ -21,13 +21,7 @@ Por lo tanto los ataques de fuerza bruta con Pc's tradicionales de 4 y 8 núcleo
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-A continuación, dejo la referencia de tiempo, en la actualidad, con el último hardware disponible, tanto de CPU como de GPU en el mercado:
-
-
-
-Y también hay que tener en cuenta el tipo de hash que vamos a crackear ya que dependiendo del tipo de hash se podrán probar más o menos claves por segundo y el tiempo estimado será mayor o menor dependiendo del hash.
-
-Por ejemplo, en este caso yo he capturado el handshake de mi red wifi y voy a intentar crackearlo con fuerza bruta por lo tanto el tipo de hash es WPA/WPA2.
+Para esta demo, en este caso yo he capturado el handshake de mi red wifi y voy a intentar crackearlo con fuerza bruta por lo tanto el tipo de hash es WPA/WPA2.
 
 Sabemos que la contraseña tiene 8 caracteres y que son todo digitos así que podríamos realizar un ataque de fuerza bruta para probar todas las combinaciones posibles indicando un charset de 8 caracteres y digitos del 0 al 9:
 
