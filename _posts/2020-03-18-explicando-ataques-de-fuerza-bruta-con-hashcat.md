@@ -17,7 +17,7 @@ Existen ciertas limitaciones a la hora de realizar un ataque de fuerza bruta y h
 
 Normalmente los que se dedican al cracking de hashes suelen tener varios Pc´s en cluster y utilizan procesadores especiales para servidores como el Intel Xeon para utilizar varias GPU's a la vez y aumentar la potencia de cómputo.
 
-Por lo tanto los ataques de fuerza bruta con Pc's tradicionales de 4 y 8 núcleos o tarjetas gráficas poco potentes, son poco viables aunque no imposibles con ciertos tipos de charsets, y para una mejor explicación voy a hacer una demostración con Hascat utilizando la GPU de mi portátil (GTX 1080) y mi procesador (Intel Core i7-7700HQ CPU).
+Por lo tanto los ataques de fuerza bruta con Pc's tradicionales de 4 y 8 núcleos o tarjetas gráficas poco potentes, son poco viables aunque no imposibles con ciertos tipos de charsets, y para una mejor explicación voy a hacer una demostración con Hascat utilizando la GPU de mi portátil (GTX 1080) y mi procesador (Intel Core i7-7700HQ).
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
