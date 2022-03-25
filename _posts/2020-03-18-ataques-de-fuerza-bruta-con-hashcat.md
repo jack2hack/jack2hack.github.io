@@ -13,9 +13,9 @@ Hola a todos. En este post vamos a explicar en qué consisten los ataques de fue
 
 Un charset puede componerse de minúsculas, mayúsculas, digitos y símbolos, y a la hora de realizar un ataque de fuerza bruta hay que indicar el charset. Si sabemos que el hash (username, contraseña, etc) que vamos a crackear contiene 8 caracteres, minúsculas, y mayúsculas, lo indicaremos de tal forma ~~y si no sabemos nada estamos jodidos.~~
 
-Existen ciertas limitaciones a la hora de realizar un ataque de fuerza bruta y hay que tener en cuenta varios factores como el charset, el tipo de hash a crackear, el modelo y número de GPUs y las capacidades de nuestro procesador/es.
+Existen ciertas limitaciones a la hora de realizar un ataque de fuerza bruta y hay que tener en cuenta varios factores como el charset, el tipo de hash a crackear, el modelo y número de GPUs y las capacidades de nuestro procesador.
 
-Normalmente los que se dedican al cracking de hashes suelen tener varios Pc´s en cluster y utilizan procesadores para servidores como el Intel Xeon para utilizar varias GPU's a la vez y para aumentar la potencia de cómputo.
+Normalmente los que se dedican al cracking de hashes suelen tener varios Pc´s en cluster y utilizan procesadores para servidores como el Intel Xeon para poder utilizar varias GPU's a la vez y para aumentar la potencia de cómputo.
 
 Y también hay que tener en cuenta el tipo de hash que vamos a crackear ya que dependiendo del tipo de hash se podrán probar más o menos claves por segundo y el tiempo estimado será mayor o menor dependiendo del hash.
 
