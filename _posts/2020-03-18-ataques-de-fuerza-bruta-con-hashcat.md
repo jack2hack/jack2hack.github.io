@@ -15,7 +15,7 @@ Un charset puede componerse de minúsculas, mayúsculas, digitos y símbolos, y 
 
 Existen ciertas limitaciones a la hora de realizar un ataque de fuerza bruta y hay que tener en cuenta varios factores como el charset, el tipo de hash a crackear, el modelo y número de GPUs y las capacidades de nuestros procesadores.
 
-Normalmente los que se dedican al cracking de hashes suelen tener varios Pc´s en cluster y utilizan procesadores para servidores como el Intel Xeon para utilizar varias GPU's a la vez y aumentar la potencia de cómputo.
+Normalmente los que se dedican al cracking de hashes suelen tener varios Pc´s en cluster y utilizan procesadores especiales para servidores como el Intel Xeon para utilizar varias GPU's a la vez y aumentar la potencia de cómputo.
 
 A continuación, dejo la referencia de tiempo, en la actualidad, con el último hardware disponible, tanto de CPU como de GPU en el mercado:
 
