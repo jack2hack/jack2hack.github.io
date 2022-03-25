@@ -2,7 +2,7 @@
 title: Ataques de fuerza bruta en Hashcat
 date: 2020-03-15 23:30:04
 categories:
-- Linux
+- Criptografía
 tags:
 - Hashcat
 - Cracking
