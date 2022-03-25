@@ -13,7 +13,7 @@ Hola a todos. En este post vamos a explicar en qué consisten los ataques de fue
 
 Un charset puede componerse de minúsculas, mayúsculas, digitos y símbolos, y a la hora de realizar un ataque de fuerza bruta hay que indicar el charset. Si sabemos que el hash (username, contraseña, etc) que vamos a crackear contiene 8 caracteres, minúsculas, y mayúsculas, lo indicaremos de tal forma ~~y si no sabemos nada estamos jodidos.~~
 
-Y también hay que tener en cuenta el tipo de hash que vamos a crackear ya que dependiendo del tipo de hash se podrán probar más o menos claves por segundo y por el tiempo estimado será mayor o menor.
+Y también hay que tener en cuenta el tipo de hash que vamos a crackear ya que dependiendo del tipo de hash se podrán probar más o menos claves por segundo y por el tiempo estimado será mayor o menor dependiendo del hash.
 
 Por ejemplo, en este caso yo he capturado el handshake de mi red wifi y voy a intentar crackearlo con fuerza bruta por lo tanto el tipo de hash es WPA/WPA2.
 
