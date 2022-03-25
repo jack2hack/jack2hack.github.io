@@ -8,73 +8,64 @@ tags:
 - Cracking
 ---
 
-Hola a todos. En este post os voy a demostrar cómo se pueden crackear los hashes del archivo /etc/shadow en Linux. El fichero /etc/shadow es un archivo que almacena las contraseñas cifradas de las cuentas de usuario en Linux, y que también guarda otra informácion muy útil cómo la última modificación de la contraseña, la fecha de caducidad, etc. Cada usuario del sistema tiene una entrada en el archivo shadow y para poder leerlo necesitamos permisos de root.
+Hola a todos. En este post vamos a explicar en qué consisten los ataques de fuerza bruta y vamos a realizar un ejemplo práctico con Hashcat.
 
-Para visualizar el contenido del archivo /etc/shadow abrimos una terminal e introducimos el siguiente comando: 
+Un ataque de fuerza bruta consiste en probar todas las combinaciones posibles para descifrar una contraseña, nombre de usuario o lo que sea.
 
-```sh
-sudo cat /etc/shadow
-```
+Obviamente un ataque de fuerza bruta no se puede realizar sin indicar un charset. Un charset es la indicación del numero de caracteres que tiene la contraseña, digitos, mayúsculas, minúsculas y símbolos.
 
-![Resultado del comando sudo cat /etc/shadow](https://i.ibb.co/Rvnhtq1/kali1.png)
+Y también hay que tener en cuenta el tipo de hash que vamos a crackear ya que dependiendo del tipo de hash se podrán probar más o menos claves por segundo.
 
-Como puede verse en la imagen de arriba, el contenido del archivo /etc/shadow tiene varias entradas registradas y cada una de ellas tiene nueve campos que se representan como se muestra en la siguiente imagen a continuación:
+Por ejemplo, en este caso yo he capturado el handshake de mi red wifi y voy a intentar crackearlo con fuerza bruta por lo tanto el tipo de hash es WPA/WPA2.
 
-![Explicación del archivo shadow en Linux](https://i.ibb.co/VJY6jdq/shadow.png)
+Sabemos que la contraseña tiene 8 caracteres y que son todo digitos así que podríamos realizar un ataque de fuerza bruta para probar todas las combinaciones posibles indicando un charset de 8 caracteres y digitos del 0 al 9:
 
-Este archivo almacena la contraseña en formato cifrado y lo que hay entre los signos del dólar indica el tipo de cifrado que en el caso de esta imagen es **«$6$»** lo que significa que el tipo de cifrado utilizado aquí es **«SHA-512»**.
+hashcat dklsfjklfjaslfjsa
 
-Este es un resumen de los cifrados más conocidos en el archivo shadow:
+De esta manera se probarían todas las combinaciones posibles en una longitud de 8 caracteres con números del 0 al 9 y para que el ataque fuera efectivo la contraseña que queremos crackear debe tener exactamente 8 caracteres, ni más ni menos.
 
-**`$1$=MD5`
-`$2$=Blowfish`
-`$5$=SHA-256`
-`$6$=SHA-512`**
+Si la contraseña tuviese 9 caracteres, claramente no la podríamos descifrar con el charset que hemos indicado, y si tuviese 7 caracteres tampoco, ya que nosotros hemos indicado 8 y probaríamos todas las combinaciones posibles con 8 caracteres.
 
-Ya que sabemos un poquito más acerca del archivo shadow y de los tipos de cifrado que utiliza este fichero vamos a pasar a la práctica y vamos a crackear este mismo fichero de mi propio sistema Kali Linux instalado en mi virtualbox.
+Existen ciertas limitaciones a la hora de realizar un ataque de fuerza bruta y hay que tener en cuenta varios factores como el tipo de hash a crackear, el modelo y número de GPUs y las capacidades de nuestro procesador. 
 
-Si no tuvieramos privilegios de root tendríamos que buscar la forma de escalar privilegios en Linux, pero como en este caso se trata de nuestro propio sistema no será necesario porque tenemos permisos y control total del sistema.
+En mi caso, para crackear una hash WPA/WPA2 de 8 caracteres que se componga únicamente de números del 0 al 9 habría 50 milllones de posibilidades y utilizando mi GPU (GTX 1050) el tiempo estimado es de 24 horas de trabajo.
 
-Bueno, lo primero que vamos a hacer va a ser copiar el contenido del archivo /etc/shadow/ en otro fichero para proceder a crackear los hashes utilizando **John the Ripper** así que abrimos una terminal y escribimos lo siguiente:
+Hascat tiene una opción activada por defecto que guarda el progreso y apaga la GPU cuando detecte que sus niveles de calor este llegando a su límite (para evitar un apagado repentino por pantalla azul) así que podemos trabajar con seguridad.
 
-```sh
-sudo cp /etc/shadow shadow
-```
+Y tras 24 horas el hash será crackeado 100% y obtendremos la contraseña ya que se probarán todas las combinaciones posibles y si el charset indicado es correcto no hay posibilidad de fallo.
 
-Y ahora vamos a visualizar el contenido del archivo shadow para averiguar cual es el tipo de algortimo de cifrado que se ha utilizado para cifrar la contraseña de la cuenta que queremos crackear, en mi caso la cuenta se llama **"kali"**:
+Claramente mi red wifi no tiene 8 caracteres compuestos por digitos pero cambié la clave para realizar esta prueba. Mi clave se compone de compone de minúsculas, mayúsculas, digitos, símbolos y un número secreto de caracteres :B
 
-```sh
-sudo cat shadow
-```
+Pero la clave por defecto de mi router es de 8 caracteres y se compone de letras minúsculas y mayúsculas así que probé a crackearlo con mi GTX 1080 indicando el siguiente charset:
 
-![Resultado del comando sudo cat /etc/shadow](https://i.ibb.co/C1bfbdP/kali2.png)
+hashcat hjfhdakfjafhnjks
 
-Como podemos ver en la imagen de arriba, el cifrado es **«$y$»** lo que por una simple búsqueda en google podemos descubrir que se trata de **«yescrypt»**, y que también se trata del nuevo cifrado por defecto utilizado en GNU/Linux.
+Y como resultado se obtienen... ¡53 trillones de posibilidades y un tiempo estimado de 18 años! Una locura y obviamente no es un tiempo estimado comprensible así que lo descartamos.
 
-Sabiendo cual es el tipo de cifrado, ahora ya podemos proceder a crackearlo con John the Ripper ejecutando:
+Probamos a bajar un poco el nivel y le ponemos 8 caracteres con minúscualas (quitando las mayúsculas):
 
+hashcat ajfhskjfhasfkshkf
 
-```sh
-john –format=crypt shadow
-```
+Resultado: 50 billones de psibilidades y un tiempo estimado de 27 días. El tiempo estimado sigue siendo mucho pero hay que tener en cuenta que estamos probando con 1 GPU GTX 1050 así que sumandole potencia nuestra máquina podríamos reducir el tiempo estimado considerablemente.
 
-Como hemos indicado el tipo de cifrado pero no hemos indicado ningún diccionario, se utilizará **«password.lst»** que es el diccionario que viene por defecto en John the Ripper y que suele funcionar muy bien con contraseñas sencillas.
+Llegados a este punto me pregunté de lo que sería capaz una máquina lo suficientemente potente y encontré un benchmark en github probando 8 gráficas GTX 1080 con Hascat.
 
-![Resultado del comando john –format=crypt shadow](https://i.ibb.co/NT693tY/kali3.png)
+El benchmark probando 8 GTX 1080 se puede ver aquí: 
 
-Y como puede verse en la imagen la contraseña ha sido encontrada utilizado el diccionario por defecto porque es una contraseña relativamente sencilla. Para visualizar la contraseña de nuevo utilizaremos el siguiente comando:
+https://gist.github.com/epixoip/a83d38f412b4737e99bbef804a270c40
 
+Una sola tarjeta Nvidia GTX 1080 prueba 400,000 claves WPA por segundo. Lo que nos da cerca de 3,200,000 claves por segundo si usamos 8 a la vez.
 
-```sh
-john –show –format=crypt shadow
-```
+Mi GTX 1050 prueba 300,000 claves por segundo así que utilizando 8 GTX 1080 podemos reducir los 27 días del charset de 8 caracteres con a-z.
 
-![Resultado del comando john –show –format=crypt shadow](https://i.ibb.co/CQCMn18/kali4.png)
+Después me puse a buscar y encontré un benchmark probando 8 RTX 2060:
 
-Si no tuvieramos éxito con el diccionario por defecto podemos utilizar otros diccionarios como por ejemplo **«rockyou»** con el argumento **«wordlist=path»**. Con «path» me refiero a la ruta donde tenemos guardado el diccionario que queremos utilizar pero para una mejor explicación aquí va un ejemplo en la terminal de comandos:
+Y también encontré un benchmark probando 8 RTX 3090:
 
-```sh
-john –format=crypt –wordlist=home/kali/Desktop/rockyou.txt
-```
+El procesador utilizado en cada benchmark es un Intel Xion utilizado por servidores y necesario para poder aprovechar la potencia de las 8 GPUs a la vez.
 
-Y pues ya está. Con esto ya hemos terminado. Así de fácil que es crackear las contraseñas del archivo /etc/shadow. Recordad que lo primero que tenemos que hacer es identificar el tipo de algortimo de cifrado que se ha utilizado para cifrar la contraseña y después indicarselo a John the Ripper con el argumento **«–format=»**, y tened en cuenta que tendremos que utilizar uno o varios diccionarios dependiendo de la complejidad de la contraseña.
+Si queremos buscar lo mas TOP de los benchmarks con Hascat podemos buscar los que utilizan las tarjetas graficas Titan valoradas entre 4000-5000 euros:
+
+https://hashcat.net/forum/thread-4314.html
+
+Una tarjeta RTX Titan 
