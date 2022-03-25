@@ -17,6 +17,10 @@ Existen ciertas limitaciones a la hora de realizar un ataque de fuerza bruta y h
 
 Normalmente los que se dedican al cracking de hashes suelen tener varios Pc´s en cluster y utilizan procesadores para servidores como el Intel Xeon para utilizar varias GPU's a la vez y para aumentar la potencia de cómputo.
 
+A continuación, dejo la referencia de tiempo, en la actualidad, con el último hardware disponible, tanto de CPU como de GPU en el mercado:
+
+
+
 Y también hay que tener en cuenta el tipo de hash que vamos a crackear ya que dependiendo del tipo de hash se podrán probar más o menos claves por segundo y el tiempo estimado será mayor o menor dependiendo del hash.
 
 Por ejemplo, en este caso yo he capturado el handshake de mi red wifi y voy a intentar crackearlo con fuerza bruta por lo tanto el tipo de hash es WPA/WPA2.
