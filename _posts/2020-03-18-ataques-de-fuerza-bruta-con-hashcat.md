@@ -19,7 +19,7 @@ Por ejemplo, en este caso yo he capturado el handshake de mi red wifi y voy a in
 
 Sabemos que la contraseña tiene 8 caracteres y que son todo digitos así que podríamos realizar un ataque de fuerza bruta para probar todas las combinaciones posibles indicando un charset de 8 caracteres y digitos del 0 al 9:
 
-hashcat dklsfjklfjaslfjsa
+bash''hashcat -d 1 -m 22000 test.hc22000 -a 3 --custom-charset1 ?l?u ?1?1?1?1?1?1?1?1''
 
 De esta manera se probarían todas las combinaciones posibles en una longitud de 8 caracteres con números del 0 al 9 y para que el ataque fuera efectivo la contraseña que queremos crackear debe tener exactamente 8 caracteres, ni más ni menos.
 
