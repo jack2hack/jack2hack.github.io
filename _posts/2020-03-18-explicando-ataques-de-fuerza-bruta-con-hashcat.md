@@ -69,7 +69,7 @@ Después me puse a buscar más información sobre este tema y encontré (gracias
 
 ![Time-to-Crack-Password](https://i.postimg.cc/g2bS6LkB/Time-to-Crack-Password.png)
 
-También encontré varios servicios en internet como por ejemplo [GPUHASH.me](https://gpuhash.me/) que se dedican a crackear hashes:
+También encontré varios servicios en internet que se dedican a crackear hashes como por ejemplo [GPUHASH.me](https://gpuhash.me/):
 
 ![GPUHash.me](https://4.bp.blogspot.com/-7K3kRkCuFw4/XLXaztyImlI/AAAAAAAAI78/UsCROdc7IMsuUQ0ocB4Ci70BdmXtW3CxwCLcBGAs/s640/1.png)
 
