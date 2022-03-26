@@ -53,12 +53,12 @@ Hascat tiene una función que guarda el progreso y apaga la GPU cuando detecte q
 
 De este modo y tras 24 horas el hash sería crackeado 100% y obtendríamos la contraseña ya que se probarían todas las combinaciones posibles y si el charset indicado es correcto no hay posibilidad de fallo.
 
-Llegados a este punto me pregunté de lo que sería capaz una máquina lo suficientemente potente y encontré un benchmark en github probando 8 gráficas GTX 1080 con Hascat:
+Llegados a este punto me pregunté de lo que sería capaz una máquina lo suficientemente potente. Me puse a buscar y encontré un benchmark en github probando 8 gráficas GTX 1080 con Hascat:
 
 https://gist.github.com/epixoip/a83d38f412b4737e99bbef804a270c40
 
 Una sola tarjeta Nvidia GTX 1080 prueba 400,000 claves WPA por segundo. Lo que nos da cerca de 3,200,000 claves por segundo si usamos 8 a la vez. Lo que significa 10.800.000.000 claves por hora así que ya sabemos como podríamos crackear un charset de 8 caracteres con letras minúsculas o mayúsculas en aproximadamente 5 horas.
 
-Después me puse a buscar y encontré una referencia de tiempo, en la actualidad, con el último hardware disponible, tanto de CPU como de GPU en el mercado:
+Después encontré una referencia de tiempo, en la actualidad, con el último hardware disponible, tanto de CPU como de GPU en el mercado:
 
 ![Time-to-Crack-Password](https://i.postimg.cc/g2bS6LkB/Time-to-Crack-Password.png)
