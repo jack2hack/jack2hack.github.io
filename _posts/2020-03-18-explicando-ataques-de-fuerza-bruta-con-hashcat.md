@@ -53,18 +53,6 @@ Hascat tiene una función que guarda el progreso y apaga la GPU cuando detecte q
 
 Y tras 24 horas el hash será crackeado 100% y obtendremos la contraseña ya que se probarán todas las combinaciones posibles y si el charset indicado es correcto no hay posibilidad de fallo.
 
-Claramente mi red wifi no tiene 8 caracteres compuestos por digitos pero cambié la clave para realizar esta prueba. Mi clave se compone de compone de minúsculas, mayúsculas, digitos, símbolos y un número secreto de caracteres :B
-
-Pero la clave por defecto de mi router es de 8 caracteres y se compone de letras minúsculas y mayúsculas así que probé a crackearlo con mi GTX 1080 indicando el siguiente charset:
-
-hashcat hjfhdakfjafhnjks
-
-Probamos a bajar un poco el nivel y le ponemos 8 caracteres con minúscualas (quitando las mayúsculas):
-
-hashcat ajfhskjfhasfkshkf
-
-Resultado: 50 billones de psibilidades y un tiempo estimado de 27 días. El tiempo estimado sigue siendo mucho pero hay que tener en cuenta que estamos probando con 1 GPU GTX 1050 así que sumandole potencia nuestra máquina podríamos reducir el tiempo estimado considerablemente.
-
 Llegados a este punto me pregunté de lo que sería capaz una máquina lo suficientemente potente y encontré un benchmark en github probando 8 gráficas GTX 1080 con Hascat.
 
 El benchmark probando 8 GTX 1080 se puede ver aquí: 
