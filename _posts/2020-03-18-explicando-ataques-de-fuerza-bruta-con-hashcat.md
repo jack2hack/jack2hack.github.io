@@ -57,7 +57,7 @@ Llegados a este punto me pregunté de lo que sería capaz una máquina lo sufici
 
 https://gist.github.com/epixoip/a83d38f412b4737e99bbef804a270c40
 
-Una sola tarjeta Nvidia GTX 1080 prueba 400,000 claves WPA por segundo. Lo que nos da cerca de 3,200,000 claves por segundo si usamos 8 a la vez. Lo que significa 10.800.000.000 claves por hora así que ya sabemos como podríamos crackear un charset de 8 caracteres con letras minúsculas o mayúsculas (ambos no).
+Una sola tarjeta Nvidia GTX 1080 prueba 400,000 claves WPA por segundo. Lo que nos da cerca de 3,200,000 claves por segundo si usamos 8 a la vez. Lo que significa 10.800.000.000 claves por hora así que ya sabemos como podríamos crackear un charset de 8 caracteres con letras minúsculas o mayúsculas en aproximadamente 4 horas.
 
 Después me puse a buscar y encontré un benchmark probando 8 RTX 2060:
 
