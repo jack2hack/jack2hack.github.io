@@ -61,7 +61,7 @@ Una sola tarjeta Nvidia GTX 1080 prueba 400,000 claves WPA por segundo. Lo que n
 
 3,200,000 claves por segundo son 259.200.000.000 por cada 24 horas y por lo tanto todavía estaríamos muy lejos del objetivo principal para crackear un charset de 8 caracteres compuesto de letras mayúsculas y minúsculas (53 trillones) ya que conseguiríamos 1 trillón en unos 4 días y por lo tanto necesitaríamos 200 días para los 50 trillones.
 
-Pero recordad que este benchmark está utilizando tarjetas Nvidea GTX 1080, así que, ¿qué pasaría si pasamos a otro nivel y utilizamos las nuevas titan RTX?
+Pero recordad que este benchmark está utilizando tarjetas Nvidea GTX 1080, así que, ¿qué pasaría si pasamos a otro nivel y utilizamos las nuevas GPU's Titan RTX? Pues que con una sola tarjeta Titan RTX (en concreto la Nvidia RTX A6000) estaríamos crackeando 1 millon de claves WPA por segundo así que echando cuentas si imaginamos que tenemos 8 RTX A6000 estaríamos probando 700 billones de claves cada 24 horas y tardaríamos unos 70 días en probar 50 trillones.
 
 
 
