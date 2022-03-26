@@ -15,7 +15,7 @@ Hola a todos. En este post vamos a explicar en qué consisten los ataques de fue
 
 Existen ciertas limitaciones a la hora de realizar un ataque de fuerza bruta y hay que tener en cuenta varios factores como el **charset**, el **tipo de hash** a crackear, el modelo/número de **GPUs** y las capacidades de nuestros **procesadores**.
 
-Normalmente los que se dedican al cracking de hashes suelen tener **varios Pc´s en cluster** y utilizan **procesadores para servidores** como el **Intel Xeon** para poder utilizar **varias GPU's a la vez** y aumentar la potencia de cómputo.
+Normalmente los que se dedican al cracking de hashes suelen tener **varios Pc´s en cluster** y utilizan **procesadores para servidores** como el **Intel Xeon** para poder utilizar **varias GPU's a la vez** y aumentar así la potencia de cómputo.
 
 Por lo tanto los ataques de fuerza bruta con Pc's tradicionales de 4 y 8 núcleos o tarjetas gráficas poco potentes, son poco viables aunque no son imposibles con ciertos tipos de charsets, y para una mejor explicación voy a hacer una demostración aquí con Hascat utilizando la GPU de mi portátil **(GTX 1050)** y mi procesador **(Intel Core i7-7700HQ)**.
 
@@ -75,4 +75,4 @@ También encontré varios servicios en internet que se dedican a crackear hashes
 
 Este servicio es uno de los más completos que he encontrado, ya que permite crackear una gran cantidad de hashes muy diferentes (wireless, windows, wallets, office, compresión, etc). Su funcionamiento es bastante básico, y de forma sencilla podremos cargar nuestro hash, o lista de hashes, para crackear, indicando el tipo de algoritmo utilizado para su generación y seleccionando la técnica que queremos que utilicen para proceder al crackeo que varía entre muchas opciones, desde la fuerza bruta clásica, al uso de diccionarios o incluso combinaciones de ellos.
 
-**Conclusión:** Si bien es cierto que la fuerza bruta no suele ser muy utilizada debido a la complejidad del asunto en cuanto a potencia de hardware se refiere, también es cierto que es una opción muy interesante que no se puede descartar a la hora de llevar a cabo auditorías de seguridad ya que si conocemos el charset las probabilidades de fallo son prácticamente nulas y por lo tanto es un factor muy importante que debemos tener siempre en cuenta.
+**Conclusión:** Si bien es cierto que la fuerza bruta no suele ser muy utilizada debido a la complejidad del asunto en cuanto a potencia de hardware se refiere, también es cierto que es una opción muy interesante que no se puede descartar a la hora de llevar a cabo auditorías de seguridad ya que si conocemos el charset las probabilidades de fallo son prácticamente nulas y por lo tanto es un factor muy importante que deberíamos tener siempre en cuenta.
