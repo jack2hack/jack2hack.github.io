@@ -33,17 +33,23 @@ De esta manera se probarían todas las combinaciones posibles con una longitud d
 
 Y como resultado he obtenido... ¡¡¡53 trillones de posibilidades y un tiempo estimado de 18 años!!! ¡¡¡Una locura!!! Obviamente no es un tiempo estimado comprensible así que descartamos la posibilidad de crackear este charset.
 
-Probamos a bajar un poco el nivel y le ponemos un charset de 8 caracteres con letras minúscualas:
+Probamos a bajar un poco el nivel y le ponemos un charset de 8 caracteres con se componga de letras minúsculas:
 
 ```sh
 hashcat -d 1 -m 22000 test.hc22000 -a 3 --custom-charset1 ?l ?1?1?1?1?1?1?1?1
 ```
 
-Resultado: 50 billones de posibilidades y un tiempo estimado de 27 días. El tiempo estimado sigue siendo mucho pero hay que tener en cuenta que estamos probando con 1 GPU GTX 1050 así que sumandole potencia a nuestra máquina añadiendo varias GPU´s de mayor categorías podríamos reducir el tiempo estimado considerablemente.
+Resultado: 50 billones de posibilidades y un tiempo estimado de 27 días. El tiempo estimado sigue siendo mucho pero hay que tener en cuenta que estamos probando con 1 GPU GTX 1050 así que sumandole potencia a nuestra máquina añadiendo varias GPU´s de mayor categoría podríamos reducir el tiempo estimado considerablemente.
+
+Por último vamos a bajar aún más el nivel metiendo un charset de 8 caracteres que se componga de digitos:
+
+```sh
+hashcat -d 1 -m 22000 test.hc22000 -a 3 --custom-charset1 ?l ?1?1?1?1?1?1?1?1
+```
 
 En mi caso, para crackear una hash WPA/WPA2 de 8 caracteres que se componga únicamente de números del 0 al 9 habría 50 milllones de posibilidades y utilizando mi GPU (GTX 1050) el tiempo estimado es de 24 horas de trabajo.
 
-Hascat tiene una opción activada por defecto que guarda el progreso y apaga la GPU cuando detecte que sus niveles de calor este llegando a su límite (para evitar un apagado repentino por pantalla azul) así que podemos trabajar con seguridad.
+Hascat tiene una opción función que guarda el progreso y apaga la GPU cuando detecte que sus niveles de calor este llegando a su límite (para evitar un apagado repentino por pantalla azul) así que podemos trabajar con seguridad realizando crackeos que duren varios días.
 
 Y tras 24 horas el hash será crackeado 100% y obtendremos la contraseña ya que se probarán todas las combinaciones posibles y si el charset indicado es correcto no hay posibilidad de fallo.
 
