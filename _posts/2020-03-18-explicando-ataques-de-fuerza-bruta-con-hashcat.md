@@ -31,7 +31,7 @@ hashcat -d 1 -m 22000 test.hc22000 -a 3 --custom-charset1 ?l?u ?1?1?1?1?1?1?1?1
 
 De esta manera se probarían todas las combinaciones posibles con una longitud de 8 caracteres que se compongan de letras minúsculas y mayúsculas, y para que el ataque fuera efectivo el hash/contraseña que queremos crackear debe tener exactamente 8 caracteres, ya que si tuviera mas o menos caracteres la combinación nunca sería generada porque nuestro custom charset prueba únicamente todas las combinaciones posibles entre 8 caracteres.
 
-Y como resultado he obtenido... ¡53 trillones de posibilidades y un tiempo estimado de 18 años! ¡Una locura! Y obviamente no es un tiempo estimado comprensible así que lo descartamos.
+Y como resultado he obtenido... ¡¡¡53 trillones de posibilidades y un tiempo estimado de 18 años!!! ¡Una locura! Y obviamente no es un tiempo estimado comprensible así que lo descartamos.
 
 En mi caso, para crackear una hash WPA/WPA2 de 8 caracteres que se componga únicamente de números del 0 al 9 habría 50 milllones de posibilidades y utilizando mi GPU (GTX 1050) el tiempo estimado es de 24 horas de trabajo.
 
