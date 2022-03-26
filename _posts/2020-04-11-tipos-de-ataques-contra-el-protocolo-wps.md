@@ -1,5 +1,5 @@
 ---
-title: Tipos de ataques contra el protocolo Wi-Fi Protected Setup
+title: Tipos de ataques contra el protocolo WPS con Reaver y Pixie Dust
 date: 2020-04-11 23:30:04
 categories:
 - Wireless
