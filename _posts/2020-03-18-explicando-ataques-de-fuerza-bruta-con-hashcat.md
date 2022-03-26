@@ -65,4 +65,4 @@ Después me puse a buscar más información sobre este tema y encontré (gracias
 
 ![Time-to-Crack-Password](https://i.postimg.cc/g2bS6LkB/Time-to-Crack-Password.png)
 
-También encontré varios servicios de cracking de hashes como GPUHASH.me que se ofrecen a crackear hashes por ti utilizando su propia potencia de cómputo:
+También encontré varios servicios en internet como por ejemplo GPUHASH.me que se dedican a crackear hashes:
