@@ -61,6 +61,6 @@ Una sola tarjeta Nvidia GTX 1080 prueba 400,000 claves WPA por segundo. Lo que n
 
 3,200,000 claves por segundo son 259.200.000.000 por cada 24 horas y por lo tanto todavía estaríamos muy lejos del objetivo principal para crackear un charset de 8 caracteres compuesto de letras mayúsculas y minúsculas (53 trillones) ya que conseguiríamos 1 trillón en unos 4 días y por lo tanto necesitaríamos 200 días para los 50 trillones.
 
-Después me puse a buscar más información sobre este tema y encontré (gracias a un compi de underc0de) una referencia de tiempo, en la actualidad, con el último hardware disponible, tanto de CPU como de GPU en el mercado:
+Después me puse a buscar más información sobre este tema y encontré (gracias a un mod de underc0de) una referencia de tiempo, en la actualidad, con el último hardware disponible, tanto de CPU como de GPU en el mercado:
 
 ![Time-to-Crack-Password](https://i.postimg.cc/g2bS6LkB/Time-to-Crack-Password.png)
