@@ -41,7 +41,7 @@ hashcat -d 1 -m 22000 test.hc22000 -a 3 --custom-charset1 ?l ?1?1?1?1?1?1?1?1
 
 Resultado: 50 billones de posibilidades y un tiempo estimado de 27 días. El tiempo estimado sigue siendo mucho pero hay que tener en cuenta que estamos probando con 1 GPU GTX 1050 así que sumandole potencia a nuestra máquina añadiendo varias GPU´s de mayor categoría podríamos reducir el tiempo estimado considerablemente.
 
-Por último vamos a bajar aún más el nivel metiendo un charset de 8 caracteres que se componga de digitos:
+Por último vamos a bajar aún más el nivel metiendo un charset de 8 caracteres que se componga solo de digitos:
 
 ```sh
 hashcat -d 1 -m 22000 test.hc22000 -a 3 --custom-charset1 ?l ?1?1?1?1?1?1?1?1
