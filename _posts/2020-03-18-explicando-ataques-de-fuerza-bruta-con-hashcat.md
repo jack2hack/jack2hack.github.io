@@ -44,12 +44,12 @@ Resultado: 50 billones de posibilidades y un tiempo estimado de 27 días. El tie
 Por último vamos a bajar aún más el nivel metiendo un charset de 8 caracteres que se componga solo de digitos:
 
 ```sh
-hashcat -d 1 -m 22000 test.hc22000 -a 3 --custom-charset1 ?l ?1?1?1?1?1?1?1?1
+hashcat -d 1 -m 22000 test.hc22000 -a 3 -d ?d?d?d?d?d?d?d?d
 ```
 
 En mi caso, para crackear un hash WPA/WPA2 de 8 caracteres que se componga únicamente de números del 0 al 9 habría 50 milllones de posibilidades y utilizando mi GPU (GTX 1050) el tiempo estimado es de 24 horas de trabajo.
 
-Hascat tiene una función que guarda el progreso y apaga la GPU cuando detecte que sus niveles de calor este llegando a su límite (para evitar un apagado repentino por pantalla azul) así que podemos trabajar con seguridad realizando crackeos que duren varios días.
+Hascat tiene una función que guarda el progreso y apaga la GPU cuando detecte que sus niveles de calor este llegando a su límite (para evitar un apagado repentino por pantalla azul) así que podemos trabajar con seguridad realizando crackeos que duren varias horas e incluso días.
 
 Y tras 24 horas el hash será crackeado 100% y obtendremos la contraseña ya que se probarán todas las combinaciones posibles y si el charset indicado es correcto no hay posibilidad de fallo.
 
