@@ -51,17 +51,13 @@ En mi caso, para crackear un hash WPA/WPA2 de 8 caracteres que se componga únic
 
 Hascat tiene una función que guarda el progreso y apaga la GPU cuando detecte que sus niveles de calor este llegando a su límite (para evitar un apagado repentino por pantalla azul) así que podemos trabajar con seguridad realizando crackeos que duren varias horas e incluso días sin miedo a perder el progreso o dañar nuestro hardware.
 
-De este modo y tras 24 horas el hash será crackeado 100% y obtendremos la contraseña ya que se probarán todas las combinaciones posibles y si el charset indicado es correcto no hay posibilidad de fallo.
+De este modo y tras 24 horas el hash sería crackeado 100% y obtendríamos la contraseña ya que se probarían todas las combinaciones posibles y si el charset indicado es correcto no hay posibilidad de fallo.
 
-Llegados a este punto me pregunté de lo que sería capaz una máquina lo suficientemente potente y encontré un benchmark en github probando 8 gráficas GTX 1080 con Hascat.
-
-El benchmark probando 8 GTX 1080 se puede ver aquí: 
+Llegados a este punto me pregunté de lo que sería capaz una máquina lo suficientemente potente y encontré un benchmark en github probando 8 gráficas GTX 1080 con Hascat:
 
 https://gist.github.com/epixoip/a83d38f412b4737e99bbef804a270c40
 
-Una sola tarjeta Nvidia GTX 1080 prueba 400,000 claves WPA por segundo. Lo que nos da cerca de 3,200,000 claves por segundo si usamos 8 a la vez.
-
-Mi GTX 1050 prueba 300,000 claves por segundo así que utilizando 8 GTX 1080 podemos reducir los 27 días del charset de 8 caracteres con a-z.
+Una sola tarjeta Nvidia GTX 1080 prueba 400,000 claves WPA por segundo. Lo que nos da cerca de 3,200,000 claves por segundo si usamos 8 a la vez. Lo que significa 10.800.000.000 claves por hora así que ya sabemos como podríamos crackear un charset de 8 caracteres con letras minúsculas o mayúsculas (ambos no).
 
 Después me puse a buscar y encontré un benchmark probando 8 RTX 2060:
 
