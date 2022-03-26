@@ -33,7 +33,11 @@ De esta manera se probarían todas las combinaciones posibles con una longitud d
 
 Y como resultado he obtenido... ¡¡¡53 trillones de posibilidades y un tiempo estimado de 18 años!!! ¡¡¡Una locura!!! Obviamente no es un tiempo estimado comprensible así que descartamos la posibilidad de crackear este charset.
 
-Probamos a bajar un poco el nivel y le ponemos un charset de 8 caracteres con minúscualas (quitando las mayúsculas):
+Probamos a bajar un poco el nivel y le ponemos un charset de 8 caracteres con letras minúscualas:
+
+```sh
+hashcat -d 1 -m 22000 test.hc22000 -a 3 --custom-charset1 ?l ?1?1?1?1?1?1?1?1
+```
 
 Resultado: 50 billones de psibilidades y un tiempo estimado de 27 días. El tiempo estimado sigue siendo mucho pero hay que tener en cuenta que estamos probando con 1 GPU GTX 1050 así que sumandole potencia nuestra máquina podríamos reducir el tiempo estimado considerablemente.
 
