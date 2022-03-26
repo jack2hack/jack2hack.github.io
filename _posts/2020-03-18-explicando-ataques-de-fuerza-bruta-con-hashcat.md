@@ -29,7 +29,7 @@ Sabemos que la contraseña tiene 8 caracteres y que se compone de letras minúsc
 hashcat -d 1 -m 22000 test.hc22000 -a 3 --custom-charset1 ?l?u ?1?1?1?1?1?1?1?1
 ```
 
-De esta manera se probarían todas las combinaciones posibles con una longitud de 8 caracteres que se compongan de letras minúsculas y mayúsculas, y para que el ataque fuera efectivo la contraseña que queremos crackear debe tener exactamente 8 caracteres, ya que si tuviera mas o menos caracteres la combinación nunca sería generada.
+De esta manera se probarían todas las combinaciones posibles con una longitud de 8 caracteres que se compongan de letras minúsculas y mayúsculas a-z/A-Z, y para que el ataque fuera efectivo la contraseña que queremos crackear debe tener exactamente 8 caracteres, ya que si tuviera mas o menos caracteres la combinación nunca sería generada.
 
 En mi caso, para crackear una hash WPA/WPA2 de 8 caracteres que se componga únicamente de números del 0 al 9 habría 50 milllones de posibilidades y utilizando mi GPU (GTX 1050) el tiempo estimado es de 24 horas de trabajo.
 
