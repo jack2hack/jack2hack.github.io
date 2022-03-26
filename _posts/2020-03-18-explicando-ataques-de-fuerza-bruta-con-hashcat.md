@@ -49,9 +49,9 @@ hashcat -d 1 -m 22000 test.hc22000 -a 3 -d ?d?d?d?d?d?d?d?d
 
 En mi caso, para crackear un hash WPA/WPA2 de 8 caracteres que se componga únicamente de números del 0 al 9 habría 50 milllones de posibilidades y utilizando mi GPU (GTX 1050) el tiempo estimado es de 24 horas de trabajo.
 
-Hascat tiene una función que guarda el progreso y apaga la GPU cuando detecte que sus niveles de calor este llegando a su límite (para evitar un apagado repentino por pantalla azul) así que podemos trabajar con seguridad realizando crackeos que duren varias horas e incluso días sin miedo a perder el progreso o dañar el hardware.
+Hascat tiene una función que guarda el progreso y apaga la GPU cuando detecte que sus niveles de calor este llegando a su límite (para evitar un apagado repentino por pantalla azul) así que podemos trabajar con seguridad realizando crackeos que duren varias horas e incluso días sin miedo a perder el progreso o dañar nuestro hardware.
 
-Y tras 24 horas el hash será crackeado 100% y obtendremos la contraseña ya que se probarán todas las combinaciones posibles y si el charset indicado es correcto no hay posibilidad de fallo.
+De este modo y tras 24 horas el hash será crackeado 100% y obtendremos la contraseña ya que se probarán todas las combinaciones posibles y si el charset indicado es correcto no hay posibilidad de fallo.
 
 Llegados a este punto me pregunté de lo que sería capaz una máquina lo suficientemente potente y encontré un benchmark en github probando 8 gráficas GTX 1080 con Hascat.
 
