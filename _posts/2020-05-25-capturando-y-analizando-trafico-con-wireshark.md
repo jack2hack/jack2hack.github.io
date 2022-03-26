@@ -1,11 +1,11 @@
 ---
-title: Explicando ataques de fuerza bruta con Hashcat
+title: Capturando y analizando tráfico con Wireshark
 date: 2020-03-15 23:30:04
 categories:
-- Criptografía
+- Wireless
 tags:
-- Hashcat
-- Cracking
+- Wireshark
+- Wireless
 ---
 
 Hola a todos. En este post vamos a explicar en qué consisten los ataques de fuerza bruta y vamos a realizar un ejemplo práctico con Hashcat. Un ataque de fuerza bruta consiste en probar todas las combinaciones posibles para descifrar una contraseña, nombre de usuario o lo que sea. Obviamente un ataque de fuerza bruta no se puede realizar sin indicar un charset. Un charset es un set de caracteres que compone una palabra, username o contraseña.
