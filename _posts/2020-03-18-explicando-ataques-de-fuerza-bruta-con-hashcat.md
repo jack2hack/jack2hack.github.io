@@ -55,7 +55,7 @@ De este modo y tras 24 horas el hash sería crackeado 100% y obtendríamos la co
 
 Llegados a este punto me pregunté de lo que sería capaz una máquina lo suficientemente potente y encontré un benchmark en github probando 8 gráficas GTX 1080 a la vez con un procesador Intel Xeon E5-2697 v3 en Hascat:
 
-https://gist.github.com/epixoip/a83d38f412b4737e99bbef804a270c40
+[https://gist.github.com/epixoip/a83d38f412b4737e99bbef804a270c40](https://gist.github.com/epixoip/a83d38f412b4737e99bbef804a270c40)
 
 Una sola tarjeta Nvidia GTX 1080 prueba 400,000 claves WPA por segundo. Lo que nos da cerca de 3,200,000 claves por segundo si usamos 8 a la vez. Lo que significa 10.800.000.000 claves por hora así que ya sabemos como podríamos crackear un charset de 8 caracteres con letras minúsculas o mayúsculas en aproximadamente 5 horas.
 
