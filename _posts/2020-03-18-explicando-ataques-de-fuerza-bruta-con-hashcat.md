@@ -39,7 +39,7 @@ Probamos a bajar un poco el nivel y le ponemos un charset de 8 caracteres con le
 hashcat -d 1 -m 22000 test.hc22000 -a 3 --custom-charset1 ?l ?1?1?1?1?1?1?1?1
 ```
 
-Resultado: 50 billones de psibilidades y un tiempo estimado de 27 días. El tiempo estimado sigue siendo mucho pero hay que tener en cuenta que estamos probando con 1 GPU GTX 1050 así que sumandole potencia nuestra máquina podríamos reducir el tiempo estimado considerablemente.
+Resultado: 50 billones de posibilidades y un tiempo estimado de 27 días. El tiempo estimado sigue siendo mucho pero hay que tener en cuenta que estamos probando con 1 GPU GTX 1050 así que sumandole potencia a nuestra máquina añadiendo mejores GPU´s podríamos reducir el tiempo estimado considerablemente.
 
 En mi caso, para crackear una hash WPA/WPA2 de 8 caracteres que se componga únicamente de números del 0 al 9 habría 50 milllones de posibilidades y utilizando mi GPU (GTX 1050) el tiempo estimado es de 24 horas de trabajo.
 
