@@ -1,5 +1,5 @@
 ---
-title: Tipos de ataques contra el protocolo WPS con Reaver y Pixie Dust
+title: Tipos de ataques contra el protocolo WPS en redes WLAN
 date: 2020-04-11 23:30:04
 categories:
 - Wireless
