@@ -61,4 +61,4 @@ Una sola tarjeta Nvidia GTX 1080 prueba 400,000 claves WPA por segundo. Lo que n
 
 Después me puse a buscar y encontré una referencia de tiempo, en la actualidad, con el último hardware disponible, tanto de CPU como de GPU en el mercado:
 
-
+![Time-to-Crack-Password](https://i.postimg.cc/g2bS6LkB/Time-to-Crack-Password.png)
