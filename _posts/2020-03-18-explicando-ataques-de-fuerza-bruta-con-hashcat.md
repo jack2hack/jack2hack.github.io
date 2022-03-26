@@ -31,10 +31,6 @@ hashcat -d 1 -m 22000 test.hc22000 -a 3 --custom-charset1 ?l?u ?1?1?1?1?1?1?1?1
 
 De esta manera se probarían todas las combinaciones posibles con una longitud de 8 caracteres que se compongan de letras minúsculas y mayúsculas, y para que el ataque fuera efectivo la contraseña que queremos crackear debe tener exactamente 8 caracteres, ya que si tuviera mas o menos caracteres la combinación nunca sería generada.
 
-Si la contraseña tuviese 9 caracteres, claramente no la podríamos descifrar con el charset que hemos indicado, y si tuviese 7 caracteres tampoco, ya que nosotros hemos indicado 8 y probaríamos todas las combinaciones posibles con 8 caracteres.
-
-Existen ciertas limitaciones a la hora de realizar un ataque de fuerza bruta y hay que tener en cuenta varios factores como el tipo de hash a crackear, el modelo y número de GPUs y las capacidades de nuestro procesador. 
-
 En mi caso, para crackear una hash WPA/WPA2 de 8 caracteres que se componga únicamente de números del 0 al 9 habría 50 milllones de posibilidades y utilizando mi GPU (GTX 1050) el tiempo estimado es de 24 horas de trabajo.
 
 Hascat tiene una opción activada por defecto que guarda el progreso y apaga la GPU cuando detecte que sus niveles de calor este llegando a su límite (para evitar un apagado repentino por pantalla azul) así que podemos trabajar con seguridad.
