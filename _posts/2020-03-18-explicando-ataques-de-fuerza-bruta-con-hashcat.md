@@ -21,7 +21,7 @@ Por lo tanto los ataques de fuerza bruta con Pc's tradicionales de 4 y 8 núcleo
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-**Para esta demo he capturado el handshake de mi red wifi y por lo tanto el tipo de hash a crackear es WPA/WPA2.**
+Para esta demo he capturado el handshake de mi red wifi y por lo tanto el tipo de hash a crackear es WPA/WPA2.
 
 Sabemos que la contraseña tiene **8 caracteres** y que se compone de **letras minúsculas y mayúsculas** así que utilizaremos un ataque de fuerza bruta para probar todas las combinaciones posibles indicando un custom charset:
 
@@ -33,21 +33,21 @@ De esta manera se probarían todas las combinaciones posibles con una longitud d
 
 Y como resultado he obtenido... **¡¡¡53 trillones de posibilidades y un tiempo estimado de 18 años!!! ¡¡¡Una locura!!!** Obviamente no es un tiempo estimado comprensible así que descartamos la posibilidad de crackear este charset.
 
-Probamos a bajar un poco el nivel y le ponemos un charset de 8 caracteres con se componga de letras minúsculas:
+Probamos a bajar un poco el nivel y le ponemos un charset de **8 caracteres** con se componga de **letras minúsculas**:
 
 ```sh
 hashcat -d 1 -m 22000 test.hc22000 -a 3 --custom-charset1 ?l ?1?1?1?1?1?1?1?1
 ```
 
-Resultado: 50 billones de posibilidades y un tiempo estimado de 27 días. El tiempo estimado sigue siendo mucho pero hay que tener en cuenta que estamos probando con 1 GPU GTX 1050 así que sumandole potencia a nuestra máquina añadiendo varias GPU´s de mayor categoría podríamos reducir el tiempo estimado considerablemente.
+Resultado: **50 billones de posibilidades y un tiempo estimado de 27 días.** El tiempo estimado sigue siendo mucho pero hay que tener en cuenta que estamos probando con 1 GPU GTX 1050 así que sumandole potencia a nuestra máquina añadiendo varias GPU´s de mayor categoría podríamos reducir el tiempo estimado considerablemente.
 
-Por último vamos a bajar aún más el nivel metiendo un charset de 8 caracteres que se componga solo de digitos:
+Por último vamos a bajar aún más el nivel metiendo un charset de **8 caracteres** que se componga solo de **digitos**:
 
 ```sh
 hashcat -d 1 -m 22000 test.hc22000 -a 3 -d ?d?d?d?d?d?d?d?d
 ```
 
-En mi caso, para crackear un hash WPA/WPA2 de 8 caracteres que se componga únicamente de números del 0 al 9 habría 50 milllones de posibilidades y utilizando mi GPU (GTX 1050) el tiempo estimado es de 24 horas de trabajo.
+En mi caso, para crackear un hash WPA/WPA2 de 8 caracteres que se componga únicamente de números del 0 al 9 habría **50 milllones de posibilidades** y utilizando mi GPU (GTX 1050) el tiempo estimado es de **24 horas** de trabajo.
 
 Hascat tiene una función que guarda el progreso y apaga la GPU cuando detecte que sus niveles de calor este llegando a su límite (para evitar un apagado repentino por pantalla azul) así que podemos trabajar con seguridad realizando crackeos que duren varias horas e incluso días sin miedo a perder el progreso o dañar nuestro hardware.
 
