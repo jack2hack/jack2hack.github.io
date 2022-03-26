@@ -17,7 +17,7 @@ Existen ciertas limitaciones a la hora de realizar un ataque de fuerza bruta y h
 
 Normalmente los que se dedican al cracking de hashes suelen tener varios Pc´s en cluster y utilizan procesadores especiales para servidores como el Intel Xeon para utilizar varias GPU's a la vez y aumentar la potencia de cómputo.
 
-Por lo tanto los ataques de fuerza bruta con Pc's tradicionales de 4 y 8 núcleos o tarjetas gráficas poco potentes, son poco viables aunque no son imposibles con ciertos tipos de charsets, y para una mejor explicación voy a hacer una demostración con Hascat utilizando la GPU de mi portátil (GTX 1050) y mi procesador (Intel Core i7-7700HQ).
+Por lo tanto los ataques de fuerza bruta con Pc's tradicionales de 4 y 8 núcleos o tarjetas gráficas poco potentes, son poco viables aunque no son imposibles con ciertos tipos de charsets, y para una mejor explicación voy a hacer una demostración aquí con Hascat utilizando la GPU de mi portátil (GTX 1050) y mi procesador (Intel Core i7-7700HQ).
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -63,7 +63,7 @@ Si nos fijamos en la velocidad del crack WPA esto es lo que obtenemos con 8 tarj
 
 **¡Una sola tarjeta Nvidia GTX 1080 prueba 400,000 claves WPA por segundo!** Lo que nos da cerca de **3,200,000 claves por segundo si usamos 8 a la vez**. Lo que significa **10.800.000.000 claves por hora** así que ya sabemos como podríamos crackear un charset de 8 caracteres con letras minúsculas o mayúsculas en aproximadamente 5 horas.
 
-3,200,000 claves por segundo son 259.200.000.000 por cada 24 horas y por lo tanto todavía estaríamos muy lejos del objetivo principal para crackear un charset de 8 caracteres compuesto de letras mayúsculas y minúsculas (53 trillones) ya que conseguiríamos 1 trillón en unos 4 días y por lo tanto necesitaríamos 200 días para los 50 trillones.
+**3,200,000 claves por segundo son 259.200.000.000 por cada 24 horas** y por lo tanto todavía estaríamos muy lejos del objetivo principal para crackear un charset de 8 caracteres compuesto de letras mayúsculas y minúsculas (53 trillones) ya que conseguiríamos **1 trillón en unos 4 días** y por lo tanto necesitaríamos **200 días para los 50 trillones.**
 
 Después me puse a buscar más información sobre este tema y encontré (gracias a hive systems) una referencia de tiempo de cracking, en la actualidad, con el último hardware disponible, tanto de CPU como de GPU en el mercado:
 
