@@ -59,6 +59,6 @@ https://gist.github.com/epixoip/a83d38f412b4737e99bbef804a270c40
 
 Una sola tarjeta Nvidia GTX 1080 prueba 400,000 claves WPA por segundo. Lo que nos da cerca de 3,200,000 claves por segundo si usamos 8 a la vez. Lo que significa 10.800.000.000 claves por hora así que ya sabemos como podríamos crackear un charset de 8 caracteres con letras minúsculas o mayúsculas en aproximadamente 5 horas.
 
-Después me puse a buscar más información y encontré (gracias a un compañero de underc0de) una referencia de tiempo, en la actualidad, con el último hardware disponible, tanto de CPU como de GPU en el mercado:
+Después me puse a buscar más información sobre el tema y encontré (gracias a un compañero de underc0de) una referencia de tiempo, en la actualidad, con el último hardware disponible, tanto de CPU como de GPU en el mercado:
 
 ![Time-to-Crack-Password](https://i.postimg.cc/g2bS6LkB/Time-to-Crack-Password.png)
