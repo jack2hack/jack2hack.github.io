@@ -29,7 +29,7 @@ Sabemos que la contraseña tiene 8 caracteres y que se compone de letras minúsc
 hashcat -d 1 -m 22000 test.hc22000 -a 3 --custom-charset1 ?l?u ?1?1?1?1?1?1?1?1
 ```
 
-De esta manera se probarían todas las combinaciones posibles en una longitud de 8 caracteres con números del 0 al 9 y para que el ataque fuera efectivo la contraseña que queremos crackear debe tener exactamente 8 caracteres, ni más ni menos.
+De esta manera se probarían todas las combinaciones posibles con una longitud de 8 caracteres que se compongan de letras minúsculas y mayúsculas, y para que el ataque fuera efectivo la contraseña que queremos crackear debe tener exactamente 8 caracteres, ni más ni menos.
 
 Si la contraseña tuviese 9 caracteres, claramente no la podríamos descifrar con el charset que hemos indicado, y si tuviese 7 caracteres tampoco, ya que nosotros hemos indicado 8 y probaríamos todas las combinaciones posibles con 8 caracteres.
 
