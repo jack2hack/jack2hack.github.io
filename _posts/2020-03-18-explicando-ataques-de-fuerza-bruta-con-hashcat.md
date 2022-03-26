@@ -53,7 +53,7 @@ Hascat tiene una función que guarda el progreso y apaga la GPU cuando detecte q
 
 De este modo y tras 24 horas el hash sería crackeado 100% y obtendríamos la contraseña ya que se probarían todas las combinaciones posibles y si el charset indicado es correcto no hay posibilidad de fallo.
 
-Llegados a este punto me pregunté de lo que sería capaz una máquina lo suficientemente potente. Me puse a buscar y encontré un benchmark en github probando 8 gráficas GTX 1080 con Hascat:
+Llegados a este punto me pregunté de lo que sería capaz una máquina lo suficientemente potente. Me puse a buscar y encontré un benchmark en github probando 8 gráficas GTX 1080 a la vez con un procesador Intel Xeon E5-2697 v3 en Hascat:
 
 https://gist.github.com/epixoip/a83d38f412b4737e99bbef804a270c40
 
