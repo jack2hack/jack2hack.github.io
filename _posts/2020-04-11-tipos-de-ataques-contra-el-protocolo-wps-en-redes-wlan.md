@@ -8,6 +8,8 @@ tags:
 - Cracking
 ---
 
+Hola a todos. En este vamos a ver los tipos de ataques que existen contra el procolo WPS y vamos a realizar un par de ejemplos prácticos. WPS (Wireless Protection Setup) es un sistema que tiene por funcionalidad básica la de ofrecer una manera controlada de conectarse a una red Wi-Fi escribiendo sólo un PIN de 8 dígitos en lugar de la contraseña de red. Al usar el botón WPS, el sistema puede funcionar de distintas maneras, si bien de entre las cuatro más comunes, la más extendida es la que se basa en el intercambio de PIN. El dispositivo debe transmitir un PIN de 8 digitos al router y a cambio este último le envía los datos para acceder a la red.
+
 Hola a todos. En este post vamos a explicar en qué consisten los ataques de fuerza bruta y vamos a realizar un ejemplo práctico con Hashcat. Un ataque de fuerza bruta consiste en probar todas las combinaciones posibles para descifrar una contraseña, nombre de usuario o lo que sea. Obviamente un ataque de fuerza bruta no se puede realizar sin indicar un charset. Un charset es un set de caracteres que compone una palabra, username o contraseña.
 
 
