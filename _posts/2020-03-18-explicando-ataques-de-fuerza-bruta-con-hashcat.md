@@ -1,5 +1,5 @@
 ---
-title: Explicando ataques de fuerza bruta con Hashcat + Demostración
+title: Explicando ataques de fuerza bruta con Hashcat + Demostración Práctica
 date: 2020-03-18 23:30:04
 categories:
 - Criptografía
