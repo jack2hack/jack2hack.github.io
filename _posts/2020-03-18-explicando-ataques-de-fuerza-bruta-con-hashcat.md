@@ -19,7 +19,7 @@ Normalmente los que se dedican al cracking de hashes suelen tener **varios Pc´s
 
 Por lo tanto los ataques de fuerza bruta con Pc's tradicionales de 4 y 8 núcleos o tarjetas gráficas poco potentes, son poco viables aunque no son imposibles con ciertos tipos de charsets, y para una mejor explicación voy a hacer una demostración aquí con Hascat utilizando la GPU de mi portátil **(GTX 1050)** y mi procesador **(Intel Core i7-7700HQ)**.
 
----------------------------------------------------------------------------------------------------------------------------------------------
+[https://gwillem.gitlab.io/assets/img/hashcat.png](https://gwillem.gitlab.io/assets/img/hashcat.png)
 
 **Para esta demo he capturado el handshake de mi red wifi** y por lo tanto el tipo de hash a crackear es **WPA/WPA2**.
 
