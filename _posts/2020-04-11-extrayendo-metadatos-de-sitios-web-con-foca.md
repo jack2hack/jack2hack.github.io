@@ -1,5 +1,5 @@
 ---
-title: Extrayendo metadatos de imágenes y otros documentos
+title: Extrayendo metadatos de sitios web con FOCA
 date: 2020-04-11 23:30:04
 categories:
 - Forensics
